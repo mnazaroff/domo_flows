@@ -9,7 +9,11 @@ import config_global
 import config
 from domo_api import domo_api_config
 
-category_list = ["category"]
+#caregories are the keys for a given flow name in dictionary
+#data_set_name_id_dict in ./domo_api_cfg/generate_dataset_id_table.py:
+#uploads, inputs, processes, and outputs
+
+category_list = [""]
 
 for category in category_list:
     dir_dataset_download = config_global.dir_dataset_download_dict[category]
