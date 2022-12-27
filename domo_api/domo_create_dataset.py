@@ -2,7 +2,7 @@
 #==============================================================================
 #create Domo API dataset
 #==============================================================================
-import domo_api_config
+import domo
 #import domo_api_dataset_cfg_table
 import json
 import sys
@@ -13,8 +13,8 @@ from pydomo.datasets import ColumnType
 def main():   
     try:
         
-        project_name = "production_scan_anal"
-        dataset_name = "MN_API_CheckpointScans_PackageGeneric"
+        project_name = "pet_tiger_running_agg"
+        dataset_name = "pet_tiger_running_agg"
 
         dir_project_domo_cfg = config_global.dir_project_root + project_name + "/domo_api_cfg/"
 
@@ -45,7 +45,7 @@ def main():
            dataset_cfg_colum_types.append(json_columntype_mapper_dict[column_type_suffix])
            
         
-        domo_sess = domo_api_config.DomoStream(domo_api_config.client_ID, domo_api_config.client_secret, domo_api_config.api_host)
+        domo_sess = domo.DomoStream(domo.client_ID, domo.client_secret, domo.api_host)
         domo_sess.DatasetCreate(dataset_name, dataset_cfg_colum_types, dataset_cfg_column_names)            
         
         

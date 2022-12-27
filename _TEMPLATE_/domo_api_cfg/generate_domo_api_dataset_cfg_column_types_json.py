@@ -11,7 +11,7 @@ from pydomo.datasets import ColumnType
 column_types_dict = {  #<description>
                       ""            :   [   ColumnType.LONG,      #col_name                                             
                                             ColumnType.DOUBLE,    #col_name
-                                            ColumnType.STRING,    #col_namecol_name
+                                            ColumnType.STRING,    #col_name
                                             ColumnType.DATETIME   #col_name
                                         ]
 
