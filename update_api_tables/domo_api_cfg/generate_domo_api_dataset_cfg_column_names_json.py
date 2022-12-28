@@ -8,8 +8,30 @@ import json
 
 #lookup table of dataset name and column names
 column_names_dict = {    #<description>
-                         ""            :   [   ""
-                                            ]            
+                         "MN_API_checkpoint_list"      :   [    "ID",
+                                                                "CheckpointID",
+                                                                "LocationName",
+                                                                "FarScanCheckpointID",
+                                                                "ParentID",
+                                                                "ParentLocationName",
+                                                                "ParentRemoteID",
+                                                                "ParentProcessIsEnabled",
+                                                                "ParentProcessIsOnline",
+                                                                "PluginClassName",
+                                                                "RemoteID",
+                                                                "IsVisible",
+                                                                "DisplayName",
+                                                                "Role",
+                                                                "HasDebugInfo",
+                                                                "RequireExplicitRouting",
+                                                                "ProcessIsEnabled",
+                                                                "ProcessIsOnline",
+                                                                "ProcessIsRouteBlocked",
+                                                                "RouteWeight",
+                                                                "UISide",
+                                                                "Size",
+                                                                "OutletStatus"
+                                                        ]        
 }
 
 

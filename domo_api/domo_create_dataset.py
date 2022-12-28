@@ -13,8 +13,8 @@ from pydomo.datasets import ColumnType
 def main():   
     try:
         
-        project_name = "production_scan_anal"
-        dataset_name = "MN_API_CheckpointScans_PackageGlobal_query_log"
+        project_name = "update_api_tables"
+        dataset_name = "MN_API_checkpoint_list"
 
         dir_project_domo_cfg = config_global.dir_project_root + project_name + "/domo_api_cfg/"
 

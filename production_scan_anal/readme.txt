@@ -1,3 +1,8 @@
+*missing oriiginchecxkpointid: not being scanned at packing table
+
+*these are hand placed("placed"):
+style: PLACE NOM PLU, PLACE
+ProductName: Extra Value Lemons, Moonlight Lemons
 
 scanned boxes with an origin checkpoint with GBF role should not be expected to
 have weight values as the GBF (currently) bypasses the scale (this should change

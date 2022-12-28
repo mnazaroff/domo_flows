@@ -1,0 +1,274 @@
+ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,ParentRemoteID,ParentProcessIsEnabled,ParentProcessIsOnline,PluginClassName,RemoteID,IsVisible,DisplayName,Role,HasDebugInfo,RequireExplicitRouting,ProcessIsEnabled,ProcessIsOnline,ProcessIsRouteBlocked,RouteWeight,UISide,Size,OutletStatus
+1,1,GBF 1,,,,,,,GBFSimple,5,0,,GBF,0,0,1,1,0,1.0,,60/64,OK
+2,2,GBF 2,,,,,,,GBFSimple,7,0,,GBF,0,0,1,1,0,1.0,,18g,OK
+3,3,GBF 3,,,,,,,GBFSimple,8,0,,GBF,0,0,1,1,0,1.0,,60/64,OK
+4,4,GBF 4,,,,,,,GBFSimple,10,0,,GBF,0,0,1,1,0,1.0,,75,OK
+5,5,GBF 5,,,,,,,GBFSimple,11,0,,GBF,0,0,1,1,0,1.0,,60/64,OK
+6,6,GBF 6,,,,,,,GBFSimple,13,0,,GBF,0,0,1,1,0,1.0,,54/56,OK
+7,7,GBF 7,,,,,,,GBFSimple,14,0,,GBF,0,0,1,1,0,1.0,,95,OK
+8,8,GBF 8,,,,,,,GBFSimple,15,0,,GBF,0,0,1,1,0,1.0,,75,OK
+9,9,GBF 9,,,,,,,GBFSimple,16,0,,GBF,0,0,1,1,0,1.0,,75,OK
+10,10,GBF 10,,,,,,,GBFSimple,17,0,,GBF,1,0,1,1,0,1.0,,95,OK
+11,11,GBF 11,,,,,,,GBFSimple,18,0,,GBF,0,0,1,1,0,1.0,,95,OK
+12,12,GBF 12,,,,,,,GBFSimple,19,0,,GBF,0,0,1,1,0,1.0,,95,OK
+13,13,GBF 13,,,,,,,GBFSimple,20,0,,GBF,0,0,1,1,0,1.0,,165,OK
+14,14,Unused - Router Pass/Fail Barcode,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+15,15,Unused -Lookup PTI,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+16,16,Unused -ln checkpoint 16,,,,,,,,remote id 16x,0,test,FruitDump,0,0,1,1,0,1.0,,,
+17,17,Lower Line 2,,160.0,"Pack Table North 1 - Outlets 1,2",,1.0,1.0,PackTable,lower.1,0,Line 2,PacktablesNorth,0,0,1,1,0,1.0,RHS,32,Disabled
+18,18,Lower Line 3,,186.0,"Pack Table South 1 - Outlets 3,4",,1.0,1.0,PackTable,lower.2,0,Line 3,PacktablesSouth,0,0,1,1,0,1.0,LHS,165,OK
+19,19,Lower Line 4,,186.0,"Pack Table South 1 - Outlets 3,4",,1.0,1.0,PackTable,lower.3,0,Line 4,PacktablesSouth,0,0,1,1,0,1.0,RHS,75,Unassigned
+20,20,Lower Line 5,,161.0,"Pack Table North 2 - Outlets 5,6",,1.0,1.0,PackTable,lower.4,0,Line 5,PacktablesNorth,0,0,1,1,0,1.0,LHS,21a,Disabled
+21,21,Lower Line 6,,161.0,"Pack Table North 2 - Outlets 5,6",,1.0,1.0,PackTable,lower.5,0,Line 6,PacktablesNorth,0,0,1,1,0,1.0,RHS,15,Disabled
+22,22,Lower Line 7,,187.0,"Pack Table South 2 - Outlets 7,8",,1.0,1.0,PackTable,lower.6,0,Line 7,PacktablesSouth,0,0,1,1,0,1.0,LHS,75,Unassigned
+23,23,Lower Line 8,,187.0,"Pack Table South 2 - Outlets 7,8",,1.0,1.0,PackTable,lower.7,0,Line 8,PacktablesSouth,0,0,1,1,0,1.0,RHS,140,Unassigned
+24,24,Lower Line 9,,162.0,"Pack Table North 3 - Outlets 9,10",,1.0,1.0,PackTable,lower.8,0,Line 9,PacktablesNorth,0,0,1,1,0,1.0,LHS,8,Disabled
+25,25,Lower Line 10,,162.0,"Pack Table North 3 - Outlets 9,10",,1.0,1.0,PackTable,lower.9,0,Line 10,PacktablesNorth,0,0,1,1,0,1.0,RHS,8,Disabled
+26,26,Lower Line 11,,188.0,"Pack Table South 3 - Outlets 11,12",,1.0,1.0,PackTable,lower.10,0,Line 11,PacktablesSouth,0,0,1,1,0,1.0,LHS,115,OK
+27,27,Lower Line 12,,188.0,"Pack Table South 3 - Outlets 11,12",,1.0,1.0,PackTable,lower.11,0,Line 12,PacktablesSouth,0,0,1,1,0,1.0,RHS,63,OK
+28,28,Lower Line 13,,163.0,"Pack Table North 4 - Outlets 13,14",,1.0,1.0,PackTable,lower.12,0,Line 13,PacktablesNorth,0,0,1,1,0,1.0,LHS,8,Disabled
+29,29,Lower Line 14,,163.0,"Pack Table North 4 - Outlets 13,14",,1.0,1.0,PackTable,lower.13,0,Line 14,PacktablesNorth,0,0,1,1,0,1.0,RHS,7,Disabled
+30,30,Lower Line 15,,189.0,"Pack Table South 4 - Outlets 15,16",,1.0,1.0,PackTable,lower.14,0,Line 15,PacktablesSouth,0,0,1,1,0,1.0,LHS,140,OK
+31,31,Lower Line 16,,189.0,"Pack Table South 4 - Outlets 15,16",,1.0,1.0,PackTable,lower.15,0,Line 16,PacktablesSouth,0,0,1,1,0,1.0,RHS,115,OK
+32,32,Lower Line 17,,164.0,"Pack Table North 5 - Outlets 17,18",,1.0,1.0,PackTable,lower.16,0,Line 17,PacktablesNorth,0,0,1,1,0,1.0,LHS,7,Disabled
+33,33,Lower Line 18,,164.0,"Pack Table North 5 - Outlets 17,18",,1.0,1.0,PackTable,lower.17,0,Line 18,PacktablesNorth,0,0,1,1,0,1.0,RHS,7,Disabled
+34,34,Lower Line 19,31.0,190.0,"Pack Table South 5 - Outlets 19,20",,1.0,1.0,PackTable,lower.18,0,Line 19,PacktablesSouth,0,0,1,1,0,1.0,LHS,140,OK
+35,35,Lower Line 20,38.0,190.0,"Pack Table South 5 - Outlets 19,20",,1.0,1.0,PackTable,lower.19,0,Line 20,PacktablesSouth,0,0,1,1,0,1.0,RHS,200,OK
+36,36,Lower Line 21,,165.0,"Pack Table North 6 - Outlets 21,22",,1.0,1.0,PackTable,lower.20,0,Line 21,PacktablesNorth,0,0,1,1,0,1.0,LHS,8,Disabled
+37,37,Lower Line 22,,165.0,"Pack Table North 6 - Outlets 21,22",,1.0,1.0,PackTable,lower.21,0,Line 22,PacktablesNorth,0,0,1,1,0,1.0,RHS,8,Disabled
+38,38,Lower Line 23,35.0,191.0,"Pack Table South 6 - Outlets 23,24",,1.0,1.0,PackTable,lower.22,0,Line 23,PacktablesSouth,0,0,1,1,0,1.0,LHS,95,OK
+39,39,Lower Line ATip,,,,,,,,lower.atip,0,,,0,0,1,1,0,1.0,,,
+40,40,Outside Print Cabinet,,,,,,,Printer,,1,Outside Print Cabinet,Printer,1,0,1,1,0,1.0,,,
+41,41,Unused - Process Sticker,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+42,42,Unused - Process Close Lid,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+43,43,Unused - Process Label RPC,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+44,44,Unused - Process Label Box,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+45,45,PTI Merge Before Checkpoint C,,,,,,,,,0,Inside PTI 3to1,Merge,0,0,1,1,0,1.0,,,
+46,46,"Router QA (Bandall, QA, Outside)",,,,,,,SecondaryPackCreate,PackC:46,1,"Divert x3, below control room stairs",Diverter,0,0,1,1,0,1.0,,,
+47,47,South Mainline/CasePacker Merge,,,,,,,,,1,Mainline/CasePacker Merge,Diverter,1,0,1,1,0,1.0,,,
+48,48,Merge 2 to 1 after a,,,,,,,,,0,,Merge,0,0,1,1,0,1.0,,,
+49,49,Casepacker Releases,,,,,,,,,1,Casepacker Releases,,1,0,1,1,0,1.0,,,
+50,50,Unused - Old Checkpoint 256,,,,,,,,,0,Unused - Old Checkpoint 256,Diverter,0,0,1,1,0,1.0,,,
+51,51,Unused - Old Casi Scale 1,,,,,,,Scale,,0,Unused - Old Casi Scale 1,Scale,0,0,1,1,0,1.0,,,
+52,52,Unused - Old Casi Scale 2,,,,,,,Scale,,0,Unused - Old Old Casi Scale 2,Scale,0,0,1,1,0,1.0,,,
+53,53,Sinclare TL4 1 - Tagging Side,,,,,,,,,0,,,0,1,1,1,0,1.0,,,
+54,54,Sinclare TL4 2 - Control Side,,,,,,,,,0,,,0,1,1,1,0,1.0,,,
+55,55,Document D1,,,,,,,,,0,,Diverter,0,0,1,1,0,1.0,,,
+56,56,Document D2,,,,,,,,,0,,Diverter,0,0,1,1,0,1.0,,,
+57,57,Router Under Sizer,,,,,,,,,1,"For Case Sealer, Box Turner",Merge,0,0,1,1,0,1.0,,,
+58,58,Case Sealer,,,,,,,,,0,,,0,1,0,1,0,1.0,,,
+59,59,Aux,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+60,60,Unused - Box Turner,,,,,,,BoxTurner,,0,Unused - Box Turner,Turner,0,1,1,1,0,1.0,,,
+61,61,Section Status and Bagger Sheers,,,,,,,,,1,Section and Sheer Control,brainbox,0,0,1,1,0,1.0,,,
+62,62,Pattern Packer Sheers,,,,,,,,,1,Pattern Packer Sheers,brainbox,0,0,1,1,0,1.0,,,
+63,63,IT Test Bench,,,,,,,,,1,IT Test Bench,,0,0,1,1,0,1.0,,,
+64,64,Unused - Error,,,,,,,,,0,Unused - Error,Error,0,1,1,1,0,1.0,,,
+65,65,Inside Lane Print Cabinet Exit,,,,,,,,,0,Inside Lane Print Cabinet Exit,Lane,0,0,1,1,0,1.0,,,
+66,66,Middle Lane Print Cabinet Exit,,,,,,,,,0,Middle Lane Print Cabinet Exit,Lane,0,0,1,1,0,1.0,,,
+67,67,Outside Lane Print Cabinet Exit,,,,,,,,,0,Outside Lane Print Cabinet Exit,Lane,0,0,1,1,0,1.0,,,
+68,68,3to1 Merge Ramp,,,,,,,,,0,Exit Ramp to Palletizing,Exit,0,0,1,1,0,1.0,,,
+69,69,Packline End Node,,,,,,,,,0,Packline End,,0,0,1,1,0,1.0,,,
+70,70,CasePacker1,,,,,,,CasePacker,CasePacker.1,0,Bagger 3,PackageCreate,0,0,1,1,0,1.0,,115,OK
+71,71,CasePacker2,,,,,,,CasePacker,CasePacker.2,0,Bagger 2,PackageCreate,0,0,1,1,0,1.0,,115,OK
+72,72,CasePacker3,,,,,,,CasePacker,CasePacker.3,0,Bagger 1,PackageCreate,0,0,1,1,0,1.0,,24,OK
+73,73,CasePacker4,,,,,,,CasePacker,CasePacker.4,0,Bagger 5,PackageCreate,0,0,1,1,0,1.0,,140,OK
+74,74,CasePacker5,,,,,,,CasePacker,CasePacker.5,0,Bagger 4,PackageCreate,0,0,1,1,0,1.0,,140,OK
+75,75,Label Dispenser B8:27:EB:37:2D:FC,,,,,,,,lower.4,0,,,0,0,1,1,0,1.0,,,
+76,76,Inside Print Cabinet,,,,,,,Printer,,1,Inside Print Cabinet,Printer,1,0,1,1,0,1.0,,,
+77,77,Middle Print Cabinet,,,,,,,Printer,,1,Middle Print Cabinet,Printer,1,0,1,1,0,1.0,,,
+78,78,Label Dispenser b8:27:eb:c7:4c:f4,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+79,79,Label Dispenser b8:27:eb:8e:ba:71,,,,,,,,lower.13,0,,,0,0,1,1,0,1.0,,,
+80,80,Label Dispenser b8:27:eb:a4:45:cf,,,,,,,,lower.14,0,,,0,0,1,1,0,1.0,,,
+81,81,Label Dispenser b8:27:eb:41:58:39,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+82,82,Unused - BoxTurner Checkpoint,,,,,,,SecondaryPackCreate,,0,Unused - BoxTurner,,0,0,1,1,0,1.0,,,
+83,83,Label Dispenser b8:27:eb:89:3d:53,,,,,,,,lower.28,0,,,0,0,1,1,0,1.0,,,
+84,84,Label Dispenser b8:27:eb:81:b4:ca,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+85,85,Label Dispenser b8:27:eb:5a:43:37,,,,,,,,lower.17,0,,,0,0,1,1,0,1.0,,,
+86,86,Label Dispenser b8:27:eb:33:47:0c,,,,,,,,lower.23,0,,,0,0,1,1,0,1.0,,,
+87,87,Label Dispenser b8:27:eb:45:c9:f9,,,,,,,,lower.19,0,,,0,0,1,1,0,1.0,,,
+88,88,Label Dispenser b8:27:eb:5e:8e:ec,,,,,,,,lower.10,0,,,0,0,1,1,0,1.0,,,
+89,89,Label Dispenser b8:27:eb:21:e0:33,,,,,,,,lower.8,0,,,0,0,1,1,0,1.0,,,
+90,90,Label Dispenser b8:27:eb:69:14:ca,,,,,,,,lower.12,0,,,0,0,1,1,0,1.0,,,
+91,91,Label Dispenser b8:27:eb:af:c1:ea,,,,,,,,lower.20,0,,,0,0,1,1,0,1.0,,,
+92,92,Label Dispenser b8:27:eb:47:9a:1b,,,,,,,,lower.26,0,,,0,0,1,1,0,1.0,,,
+93,93,Label Dispenser b8:27:eb:28:b1:0c,,,,,,,,lower.30,0,,,0,0,1,1,0,1.0,,,
+94,94,Label Dispenser b8:27:eb:54:57:35,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+95,95,Label Dispenser b8:27:eb:53:5f:65,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+96,96,Label Dispenser b8:27:eb:c6:84:ac,,,,,,,,lower.22,0,,,0,0,1,1,0,1.0,,,
+97,97,Label Dispenser b8:27:eb:58:6a:ab,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+98,98,Label Dispenser b8:27:eb:4b:1b:3a,,,,,,,,lower.29,0,,,0,0,1,1,0,1.0,,,
+99,99,Label Dispenser b8:27:eb:08:a9:8b,,,,,,,,lower.18,0,,,0,0,1,1,0,1.0,,,
+100,100,Label Dispenser b8:27:eb:f8:c7:bb,,,,,,,,lower.9,0,,,0,0,1,1,0,1.0,,,
+101,101,Palletizing Lower (ROBOTS),,,,,,,,,1,,Diverter,0,0,1,1,0,1.0,,,
+102,102,Unused - Checkpoint Palletizing 2,,,,,,,,,0,Unused - Checkpoint Palletizing 2,Diverter,0,0,1,1,0,1.0,,,
+103,103,Unused - Checkpoint 103 - 4th pallet/Recirc,,,,,,,,,0,Unused - Checkpoint 103 - 4th pallet/Recirc,Diverter,0,0,1,1,0,1.0,,,
+104,104,Unused - Manual Palletizing,,,,,,,,,0,Unused - Manual Palletizing,,0,0,1,1,0,1.0,,,
+105,105,Pallet A / Left - Robot3,,,,,,,RobotPalletizer,,0,Robot 3 - Pallet A,Pallet,0,1,1,1,0,1.0,,,
+106,106,Pallet B / Left - Robot3,,,,,,,RobotPalletizer,,0,Robot 3 - Pallet B,Pallet,0,1,1,1,0,1.0,,,
+107,107,Pallet A / Left - Robot2,,,,,,,RobotPalletizer,,0,Robot 2 - Pallet A,Pallet,0,1,1,1,0,1.0,,,
+108,108,Pallet B / Left - Robot2,,,,,,,RobotPalletizer,,0,Robot 2 - Pallet B,Pallet,0,1,1,1,0,1.0,,,
+109,109,Label Dispenser b8:27:eb:21:1d:77,,,,,,,,lower.3,0,,,0,0,1,1,0,1.0,,,
+110,110,Label Dispenser b8:27:eb:35:c1:18,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+111,111,Label Dispenser b8:27:eb:27:9f:31,,,,,,,,lower.24,0,,,0,0,1,1,0,1.0,,,
+112,112,Label Dispenser b8:27:eb:89:5e:92,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+113,113,Label Dispenser b8:27:eb:6a:7b:11,,,,,,,,lower.11,0,,,0,0,1,1,0,1.0,,,
+114,114,Label Dispenser b8:27:eb:3a:29:cd,,,,,,,,lower.15,0,,,0,0,1,1,0,1.0,,,
+115,115,Label Dispenser b8:27:eb:54:57:35,,,,,,,,lower.16,0,,,0,0,1,1,0,1.0,,,
+116,116,Camera Test,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+117,117,GPIO v4,,,,,,,,,0,,"vision,gpio",0,0,1,1,0,1.0,,,
+118,118,Inside Merge Print 1,,,,,,,MPERIA,,0,Inside Merge Print 1,,0,1,1,0,0,0.8,,,
+119,119,Middle Merge Print 1,,,,,,,MPERIA,,0,Middle Merge Print 1,,0,1,1,1,0,1.0,,,
+120,120,Outside Merge Print 1,,,,,,,MPERIA,,0,Outside Merge Print 1,,0,1,0,1,0,1.0,,,
+121,121,Bandall Inside,,,,,,,,,0,Bandall Inside,,0,0,1,1,0,1.0,,,
+122,122,Bandall Middle,,,,,,,,,0,Bandall Middle,,0,0,1,1,0,1.0,,,
+123,123,Palletizing Loop - TrafficCop,,,,,,,TrafficCop,,0,Palletizing Loop - TrafficCop,TrafficCop,0,0,1,1,0,1.0,,,
+124,124,Label Dispenser b8:27:eb:55:c0:10,,,,,,,,lower.27,0,,,0,0,1,1,0,1.0,,,
+125,125,Label Dispenser b8:27:eb:86:78:f9,,,,,,,,lower.32,0,,,0,0,1,1,0,1.0,,,
+126,126,Label Dispenser b8:27:eb:21:4f:e4,,,,,,,,lower.31,0,,,0,0,1,1,0,1.0,,,
+127,127,Label Dispenser b8:27:eb:9c:d1:02,,,,,,,,lower.5,0,,,0,0,1,1,0,1.0,,,
+128,128,Label Dispenser b8:27:eb:04:73:2b,,,,,,,,lower.7,0,,,0,0,1,1,0,1.0,,,
+129,129,Label Dispenser b8:27:eb:8f:99:e5,,,,,,,,lower.6,0,,,0,0,1,1,0,1.0,,,
+130,130,Label Dispenser b8:27:eb:09:e6:3f,,,,,,,,lower.21,0,,,0,0,1,1,0,1.0,,,
+131,131,Label Dispenser b8:27:eb:78:bc:15,,,,,,,,lower.25,0,,,0,0,1,1,0,1.0,,,
+132,132,Accumulator 1,,,,,,,,9,0,Accumulator 1 - Bagger 1 CMSA 3,Accumulator,0,0,1,1,0,1.0,,140,Disabled
+133,133,Accumulator 2,,,,,,,,9,0,Accumulator 2 - Bagger 1 CMSA 3,Accumulator,0,0,1,1,0,1.0,,140,Disabled
+134,134,Accumulator 3,,,,,,,,6,0,Accumulator 3 - Bagger 2 CMSA 2,Accumulator,0,0,1,1,0,1.0,,115,OK
+135,135,Accumulator 4,,,,,,,,6,0,Accumulator 4 - Bagger 2 CMSA 2,Accumulator,0,0,1,1,0,1.0,,115,OK
+136,136,Accumulator 5,,,,,,,,lower.10,0,Accumulator 5 - Bagger 1 CMSA 1,Accumulator,0,0,1,1,0,1.0,,115,OK
+137,137,Accumulator 6,,,,,,,,lower.15,0,Accumulator 6 - Bagger 1 CMSA 1,Accumulator,0,0,1,1,0,1.0,,115,OK
+138,138,Accumulator 7,,,,,,,,lower.7,0,Accumulator 7 - Bagger 4 CMSA 4,Accumulator,0,0,1,1,0,1.0,,140,Unassigned
+139,139,Accumulator 8,,,,,,,,lower.11,0,Accumulator 8 - Bagger 4 CMSA 4,Accumulator,0,0,1,1,0,1.0,,63,OK
+140,140,Accumulator 9,,,,,,,,12,0,Accumulator 9 - Bagger 5 CMSA 5,Accumulator,0,0,1,1,0,1.0,,140,OK
+141,141,Accumulator 10,,,,,,,,12,0,Accumulator 10 - Bagger 5 CMSA 5,Accumulator,0,0,1,1,0,1.0,,140,OK
+142,142,PatternPacker1,,,,,,,PatternPacker,,0,Pattern Packer 1,PatternPacker,0,0,1,1,0,1.0,,115,OK
+143,143,PatternPacker2,,,,,,,PatternPacker,6,0,Pattern Packer 2,PatternPacker,0,0,1,1,0,1.0,,115,OK
+144,144,PatternPacker3,,,,,,,PatternPacker,12,0,Pattern Packer 3,PatternPacker,0,0,1,1,0,1.0,,140,OK
+145,145,Inside Merge 2,,,,,,,MPERIA,,0,Sato 1 - Inside Lane,,0,1,1,0,0,1.0,,,
+146,146,Outside Merge 1,,,,,,,SATO,,0,Outside ID SATO,,0,0,0,1,0,1.0,,,
+147,147,MergeGBFtoC,,,,,,,,,0,,TrafficCop,0,0,1,1,0,1.0,,,
+148,148,Unused - Sato Cutie Delay,,,,,,,,,0,Sato Cutie Delay,,0,1,1,1,0,1.0,,,
+149,149,Outside Merge 2,,,,,,,SATO,,0,Outside Brown Label,,0,1,0,1,0,1000.0,,,
+150,150,Accumulator 11,,,,,,,,lower.19,0,Accumulator 11 - Bagger 6 CMSA 5,Accumulator,0,0,1,1,0,1.0,,200,OK
+151,151,Accumulator 12,,,,,,,,lower.23,0,Accumulator 12 - Bagger 6 CMSA 5,Accumulator,0,0,1,1,0,1.0,,95,OK
+152,152,Printer Outside Null,,,,,,,NULLPrinter,,0,,,0,0,1,1,0,100.0,,,
+153,153,Printer Inside Null,,,,,,,NULLPrinter,,0,,,0,1,1,1,0,1.0,,,
+154,154,P1 - Citizen 1,,,,,,,Citizen,Tagging,0,P1 - Citizen 1,,0,0,1,1,0,1.0,,,
+155,155,P1 - Citizen 2,,,,,,,Citizen,Tagging,0,P1 - Citizen 2,,0,0,1,1,0,1.0,,,
+156,156,"Traffic Cop below 7l GBF, MainLine",,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+157,157,North Packtables GPIO 1-3,,,,,,,,,1,North Pack Tables,rpigpio,1,0,1,1,0,1.0,,,
+158,158,North Packtables GPIO 4-6,,,,,,,,,1,N PackTables 4-6,rpigpio,0,0,1,1,0,1.0,,,
+159,159,North Packtables GPIO 7-9,,,,,,,,,1,N PackTables 7-9,rpigpio,0,0,1,1,0,1.0,,,
+160,160,"Pack Table North 1 - Outlets 1,2",,,,,,,,,1,"PackTable1 Outlets1,2",PackTable,0,0,1,1,0,1.0,,,
+161,161,"Pack Table North 2 - Outlets 5,6",,,,,,,,,1,"PackTable1 Outlets5,6",PackTable,0,0,1,1,0,1.0,,,
+162,162,"Pack Table North 3 - Outlets 9,10",,,,,,,,,1,"PackTable1 Outlets9,10",PackTable,0,0,1,1,0,1.0,,,
+163,163,"Pack Table North 4 - Outlets 13,14",,,,,,,,,1,"PackTable1 Outlets13,14",PackTable,0,0,1,1,0,1.0,,,
+164,164,"Pack Table North 5 - Outlets 17,18",,,,,,,,,1,"PackTable1 Outlets17,18",PackTable,0,0,1,1,0,1.0,,,
+165,165,"Pack Table North 6 - Outlets 21,22",,,,,,,,,1,"PackTable1 Outlets21,22",PackTable,0,0,1,1,0,1.0,,,
+166,166,"Pack Table North 7 - Outlets 25,26",,,,,,,,,1,"PackTable1 Outlets25,26",PackTable,0,0,1,1,0,1.0,,,
+167,167,"Pack Table North 8 - Outlets 27,28",,,,,,,,,1,"PackTable1 Outlets27,28",PackTable,0,0,1,1,0,1.0,,,
+168,168,"Pack Table North 9 - Outlets 31,32",,,,,,,,,1,"PackTable1 Outlets31,32",PackTable,0,0,1,1,0,1.0,,,
+169,169,Lower Line 1,,160.0,"Pack Table North 1 - Outlets 1,2",,1.0,1.0,PackTable,lower.0,0,Line 1,PacktablesNorth,0,0,1,1,0,1.0,LHS,30/35,Disabled
+170,170,Lower Line 24,,191.0,"Pack Table South 6 - Outlets 23,24",,1.0,1.0,PackTable,lower.23,0,Line 24,PacktablesSouth,0,0,1,1,0,1.0,RHS,95,OK
+171,171,Lower Line 25,,166.0,"Pack Table North 7 - Outlets 25,26",,1.0,1.0,PackTable,lower.24,0,Line 25,PacktablesNorth,0,0,1,1,0,1.0,LHS,9,Disabled
+172,172,Lower Line 26,,166.0,"Pack Table North 7 - Outlets 25,26",,1.0,1.0,PackTable,lower.25,0,Line 26,PacktablesNorth,0,0,1,1,0,1.0,RHS,9,Disabled
+173,173,Lower Line 27,,167.0,"Pack Table North 8 - Outlets 27,28",,1.0,1.0,PackTable,lower.26,0,Line 27,PacktablesNorth,0,0,1,1,0,1.0,LHS,6,Disabled
+174,174,Lower Line 28,,167.0,"Pack Table North 8 - Outlets 27,28",,1.0,1.0,PackTable,lower.27,0,Line 28,PacktablesNorth,0,0,1,1,0,1.0,RHS,5,Disabled
+175,175,Lower Line 29,,192.0,"Pack Table South 7 - Outlets 29,30",,1.0,1.0,PackTable,lower.28,0,Line 29,PacktablesSouth,0,0,1,1,0,1.0,LHS,75,OK
+176,176,Lower Line 30,,192.0,"Pack Table South 7 - Outlets 29,30",,1.0,1.0,PackTable,lower.29,0,Line 30,PacktablesSouth,0,0,1,1,0,1.0,RHS,75,OK
+177,177,Lower Line 31,,168.0,"Pack Table North 9 - Outlets 31,32",,1.0,1.0,PackTable,lower.30,0,Line 31,PacktablesNorth,0,0,1,1,0,1.0,LHS,6,Disabled
+178,178,Lower Line 32,,168.0,"Pack Table North 9 - Outlets 31,32",,1.0,1.0,PackTable,lower.31,0,Line 32,PacktablesNorth,0,0,1,1,0,1.0,RHS,4,Disabled
+179,179,Lower Line 33,,,,,,,,lower.32,0,Line 33,,0,0,1,1,0,1.0,,12,Disabled
+180,180,Router South to TL4,,,,,,,Traffic,,1,,,1,0,1,1,0,1.0,,,
+181,181,P4 Cold - Citizen 1,,,,,,,Citizen,Shipping,0,P4 Cold - Citizen 1,,0,0,1,1,0,1.0,,,
+182,182,Router Second North side to Tagging TL4,,,,,,,Traffic,,1,,,1,0,1,1,0,1.0,,,
+183,183,Buffering Lane to TL4 Tagging Side,,,,,,,Traffic,,0,,TrafficCop,0,0,1,1,0,0.1,,,
+184,184,Buffering Lane to TL4 Sizer Side,,,,,,,Traffic,,0,,,0,0,1,1,0,1.0,,,
+185,185,South Pack Tables 1-7,,,,,,,,,1,South Pack Tables,PackTable,1,0,1,1,0,1.0,,,
+186,186,"Pack Table South 1 - Outlets 3,4",,,,,,,,,1,"Pack Table 1 - Outlets 3,4",PackTable,0,0,1,1,0,1.0,,,
+187,187,"Pack Table South 2 - Outlets 7,8",,,,,,,,,1,"Pack Table 1 - Outlets 7,8",PackTable,0,0,1,1,0,1.0,,,
+188,188,"Pack Table South 3 - Outlets 11,12",,,,,,,,,1,"Pack Table 1 - Outlets 11,12",PackTable,0,0,1,1,0,1.0,,,
+189,189,"Pack Table South 4 - Outlets 15,16",,,,,,,,,1,"Pack Table 1 - Outlets 15,16",PackTable,0,0,1,1,0,1.0,,,
+190,190,"Pack Table South 5 - Outlets 19,20",,,,,,,,,1,"Pack Table 1 - Outlets 19,20",PackTable,0,0,1,1,0,1.0,,,
+191,191,"Pack Table South 6 - Outlets 23,24",,,,,,,,,1,"Pack Table 1 - Outlets 23,24",PackTable,0,0,1,1,0,1.0,,,
+192,192,"Pack Table South 7 - Outlets 29,30",,,,,,,,,1,"Pack Table 1 - Outlets 29,30",PackTable,0,0,1,1,0,1.0,,,
+193,193,Inkjet GBF Long Throw,,,,,,,MPERIA,,0,,,0,1,0,1,0,1.0,,,
+194,194,Palletizing Lower (BUFFERING),,,,,,,Traffic,,1,,,1,0,1,1,0,1.0,,,
+195,195,Pallatizing Storage 1,,,,,,,Buffer,,1,,,0,0,0,0,0,1.0,,,
+196,196,Pallatizing Storage 2,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
+197,197,Pallatizing Storage 3,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
+198,198,Pallatizing Storage 4,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
+199,199,Pallatizing Storage 5,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
+200,200,Palletizing Lower P3000 PLC Bufferlanes,,,,,,,Traffic,,1,,p3000,0,0,1,1,0,1.0,,,
+201,201,Palletizing Staging 1,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+202,202,Palletizing Staging 2,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+203,203,Palletizing Staging 3,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+204,204,Palletizing Staging 4,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+205,205,Palletizing Staging 5,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+206,206,P1 - Citizen 3,,,,,,,Citizen,Tagging,0,P1 - Citizen 3,,0,0,1,1,0,1.0,,,
+207,207,Sato P6,,,,,,,SATO,,0,,,0,0,1,0,0,1.0,,,
+208,208,Test Bench,,,,,,,SATO,,0,IT Test Bench,,0,0,1,1,0,1.0,,,
+209,209,Palletizing Infeed Router,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+210,210,Palletizing P3000 PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+211,211,Palletizing Upper (MANUAL),,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+212,212,Manual 1,,,,,,,,,0,Upper Manual Pallet 1,,0,0,1,1,0,1.0,,,
+213,213,Manual 2,,,,,,,,,0,Upper Manual Pallet 2,,0,0,1,1,0,1.0,,,
+214,214,Manual 3,,,,,,,,,0,Upper Manual Pallet 3,,0,0,1,1,0,1.0,,,
+215,215,Manual 4,,,,,,,,,0,Upper Manual Pallet 4,,0,0,1,1,0,1.0,,,
+216,216,Manual 5,,,,,,,,,0,Upper Manual Pallet 5,,0,0,1,1,0,1.0,,,
+217,217,Palletizing 3rd Pallet Robot Exits,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+218,218,Palletizing Robot 1 3rd Pallet,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+219,219,Palletizing Robot 2 3rd Pallet,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+220,220,Palletizing Robot 3 3rd Pallet,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+221,221,Upper Palletizing Recirc Traffic Cop,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+222,222,Upper Palletizing Mainline Merge Traffic Cop,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+223,223,South P3000 PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+224,224,PIM Verification 40,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+225,225,CasePacker6,,,,,,,CasePacker,CasePacker.6,0,Bagger 6,PackageCreate,0,0,1,1,0,1.0,,18,
+226,226,Palletizing PLC Outside P3000,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+227,227,Palletizing Upper (ROBOTS),,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+228,228,Pallet C / Center - Robot1,,,,,,,RobotPalletizer,,1,Robot1 - Pallet C,Pallet,0,1,1,1,0,1.0,,,
+229,229,Pallet C / Center - Robot2,,,,,,,RobotPalletizer,,1,Robot2 - Pallet C,Pallet,0,1,1,1,0,1.0,,,
+230,230,Pallet A Robot3,,,,,,,RobotPalletizer,,0,Robot3 - Pallet A,Pallet,0,1,1,1,0,1.0,,,
+231,231,Pallet B Robot3,,,,,,,RobotPalletizer,,0,Robot3 - Pallet B,Pallet,0,1,1,1,0,1.0,,,
+232,232,Robot Trolley,,,,,,,,,0,Robot Trolley,,0,0,1,1,0,1.0,,,
+233,233,P3000 Under 7L,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+234,234,QA Station 1,,,,,,,,,0,,"qa,scale",0,0,1,1,0,1.0,,,
+235,235,North Side End,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+236,236,North Side End,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+237,237,Middle - Merge Print 1,,,,,,,,,0,,,0,0,1,0,0,1.0,,,
+238,238,Middle - Merge Print 2,,,,,,,,,0,,,0,0,1,0,0,1.0,,,
+239,239,SouthSide/NorthSide Merge,,,,,,,,,0,,Diverter,0,0,1,1,0,1.0,,,
+241,241,Router QA,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+242,242,QA Station 1,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+243,243,QA Station 2,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+244,244,QA Station 3,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+245,245,QA Station 4,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+246,246,QA Station 5,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+247,247,QA Station 6,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+248,248,GPIO RPI Under 7L,,,,,,,,,0,,GPIO,0,0,1,1,0,1.0,,,
+249,249,QA/GBF/Mainline Merge,,,,,,,,,1,,Merge,0,0,1,1,0,1.0,,,
+250,250,Pallet C / Center - Robot3,,,,,,,RobotPalletizer,,0,Robot3 - Pallet C,Pallet,0,1,1,1,0,1.0,,,
+251,251,shop line testing,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+252,252,VFD Control south,,,,,,,,,0,,p3000,0,0,1,1,0,1.0,,,
+253,253,North Pack Table Motor Controller,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+254,254,P4 Cold - Citizen 2,,,,,,,Citizen,,0,P4 Cold - Citizen 2,,0,0,1,1,0,1.0,,,
+255,255,NorthSide Tables MainLine,,,,,,,,,1,North Pack Tables,Packtable,0,0,1,1,0,1.0,,,
+256,256,upstairs p3000 vfd,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+257,257,3to1 lower,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+258,258,3to1 upper east,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+259,259,3to1 upper west,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
+260,260,upstairs p3000 south,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+261,261,downstairs p3000 3to1,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+262,262,Upper Storage 3to1 Middle,,,,,,,,,1,3to1 Storage Middle,Storage,0,1,1,1,0,1.0,,,
+263,263,Upper Storage 3to1 Left,,,,,,,,,1,3to1 Storage Left,Storage,0,1,1,1,0,1.0,,,
+264,264,p2000 north side lights,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+265,265,p2000 south side lights,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+266,266,P1 - Citizen 4,,,,,,,Citizen,Tagging,0,P1 - Citizen 4,,0,0,1,1,0,1.0,,,
+267,267,P4 Shed - Citizen 1,,,,,,,Citizen,,0,P4 Shed - Citizen 1,,0,0,1,1,0,1.0,,,
+268,268,P4 Shed - Citizen 2,,,,,,,Citizen,,0,P4 Shed - Citizen 2,,0,0,1,1,0,1.0,,,
+269,269,Robot 1 - North,,,,,,,,,1,Robot 1,fanuc,0,0,1,1,0,1.0,,,
+270,270,Robot 2 - Middle,,,,,,,,,1,Robot 2,fanuc,0,0,1,1,0,1.0,,,
+271,271,Robot 3 - South,,,,,,,,,1,Robot 3,fanuc,0,0,1,1,0,1.0,,,
+272,272,North Packtables Table PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+273,273,Printer PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+274,274,South Side Sizer End PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
