@@ -1,0 +1,3 @@
+CD C:\Users\Administrator\Documents\Python\domo_flows\production_scan_anal
+PackageGlobal_data_stream.pyw
+exit

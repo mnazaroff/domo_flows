@@ -1,4 +1,3 @@
-
 #config.py
 #==============================================================================
 #local configuration for this dataflow
@@ -22,7 +21,7 @@ dir_data_inputs = config_global.dir_dataset_download_dict["inputs"]         #dir
 dir_data_processes = config_global.dir_dataset_download_dict["processes"]   #directory containing domo processes data sets
 dir_data_outputs = config_global.dir_dataset_download_dict["outputs"]       #directory containing domo output data sets
 dir_tables_lookup = config_global.dir_dataset_download_dict["tables"]       #directory containing lookup tables
-dir_domo_api_cfg = "./domo_api_cfg'"                                                    #directory where project domo api configurations are stored
+dir_domo_api_cfg = "./domo_api_cfg'"                                        #directory where project domo api configurations are stored
 dir_results = "./results_data/"                                             #directory where results are saved
 
 # mdb_server = "docker3"
@@ -30,8 +29,8 @@ mdb_server = "10.2.150.233"
 mdb_port = "27021" #as of 1*8*2020 this works but no coded boxes
 # mdb_port = "27020" #as of 1*8*2020 this is not in operation
 
-mdb_db = "PackageGeneric"       #PackageGeneric does not grab every code
-mdb_collect = "PackageGeneric"  #PackageGeneric does not grab every code
+#mdb_db = "PackageGeneric"       #PackageGeneric does not grab every code
+#mdb_collect = "PackageGeneric"  #PackageGeneric does not grab every code
 
 #mdb_db = "PackageGlobal"       #Packageglobal is now used as of 1*19*21
 #mdb_collect = "PackageGlobal"  #Packagelobal is now used as of 1*19*21

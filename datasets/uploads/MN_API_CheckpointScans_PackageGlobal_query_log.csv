@@ -1,0 +1,2 @@
+DateTime_start,DateTime_stop,duration_proc_mins,count_read,count_success,ratio_success
+2022-12-27 13:00:00.098451,2022-12-28 13:00:05.655489,0.06666666666666667,7149,7149,1.0

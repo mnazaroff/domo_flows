@@ -83,11 +83,15 @@ def docs_to_table_package_global_monolithic(docs):
             cnt_read = cnt_read+1             
             # print("{0}".format(cnt_read), end="\r", flush=True)            
             # if not cnt_read%1:
-            #     print("{0}".format(cnt_read), end="\r", flush=True)                     
-           
-            CommodityID = None      
-            if "BlockData" in doc.keys():
-                CommodityID = doc["BlockData"]["CommodityID"] if ("CommodityID" in doc["BlockData"].keys()) else None
+            #     print("{0}".format(cnt_read), end="\r", flush=True)                      
+
+            if "CheckweigherResult"  in doc.keys():
+                if "Weight" in doc["CheckweigherResult"].keys():
+                    CheckweigherResultAvg = doc["CheckweigherResult"]["Weight"]
+                else:
+                    CheckweigherResultAvg = None
+            else:
+                CheckweigherResultAvg = None
            
             #check if AttributeDataMatrix scan scores are available
             DataMatrixExists = False
@@ -97,34 +101,43 @@ def docs_to_table_package_global_monolithic(docs):
             elif "AttributeDataMatrix" in doc.keys():
                 DataMatrixExists = True            
         
-            doc_dict_CheckpointScans_list.append({  "_id"                   :   doc["_id"],     
-                                                    "DateCreate"            :   doc["DateCreate"] if ("DateCreate" in doc.keys()) else None,
-                                                    "CheckpointID"          :   doc["CheckpointID"] if ("CheckpointID" in doc.keys()) else None,  
-                                                    "OriginCheckpointID"    :   doc["OriginCheckpointID"] if ("OriginCheckpointID" in doc.keys()) else None, 
-                                                    "Code"                  :   doc["Code"] if ("Code" in doc.keys()) else None,
-                                                    "BoxID"                 :   doc["BoxID"] if ("BoxID" in doc.keys()) else None,
-                                                    "ProductID"             :   doc["ProductID"] if ("ProductID" in doc.keys()) else None, 
-                                                    "Size"                  :   doc["Size"] if ("Size" in doc.keys()) else None,  
-                                                    "Style"                 :   doc["Style"] if ("Style" in doc.keys()) else None,
-                                                    "BlockID"               :   doc["BlockID"] if ("BlockID" in doc.keys()) else None,
-                                                    "CommodityID"           :   CommodityID,
-                                                    "PTIExists"             :   "AttributePTI" in doc.keys(),                                                  
-                                                    "DataMatrixExists"      :   DataMatrixExists
-                                                }            
+            doc_dict_CheckpointScans_list.append({  "_id"                       :   doc["_id"],
+                                                    "PK"                        :   doc["PK"] if ("PK" in doc.keys()) else None,
+                                                    "Code"                      :   str(doc["Code"]) if ("Code" in doc.keys()) else None,
+                                                    "BlockID"                   :   doc["BlockID"] if ("BlockID" in doc.keys()) else None,
+                                                    "CheckpointID"              :   doc["CheckpointID"] if ("CheckpointID" in doc.keys()) else None,
+                                                    "DateCreate"                :   doc["DateCreate"] if ("DateCreate" in doc.keys()) else None,
+                                                    "ProductComposite"          :   doc["ProductComposite"] if ("ProductComposite" in doc.keys()) else None,
+                                                    "ProductID"                 :   doc["ProductID"] if ("ProductID" in doc.keys()) else None,
+                                                    "Size"                      :   doc["Size"] if ("Size" in doc.keys()) else None,
+                                                    "Style"                     :   doc["Style"] if ("Style" in doc.keys()) else None,
+                                                    "Content"                   :   doc["Content"] if ("Content" in doc.keys()) else None,
+                                                    "OriginCheckpointID"        :   doc["OriginCheckpointID"] if ("OriginCheckpointID" in doc.keys()) else None,
+                                                    "PrintSize"                 :   doc["PrintSize"] if ("PrintSize" in doc.keys()) else None,
+                                                    "FruitCount"                :   doc["FruitCount"] if ("FruitCount" in doc.keys()) else None,
+                                                    "CheckweigherResultAvg"     :   CheckweigherResultAvg,
+                                                    "DataMatrixExists"          :   DataMatrixExists,
+                                                    "PTIExists"                 :   "AttributePTI" in doc.keys()
+                                                }
             )       
             
             cnt_success = cnt_success + 1
             
-            
+
         except KeyError as e:            
             print("{0}: {1} missing field {2}".format(cnt_read,  doc["_id"], e), end="\r", flush=True)
-            # continue
+            #print(doc["_id"])
+            #continue
             return
-
+            
     print("{0} records read".format(cnt_read))
     print("{0} records processed successfully".format(cnt_success))
 
-    return {"CheckpointScans" : doc_dict_CheckpointScans_list}
+    return { "Data"             :   doc_dict_CheckpointScans_list,
+             "count_read"       :   cnt_read,
+             "count_success"    :   cnt_success,
+             "ratio_success"    :   cnt_success/cnt_read
+           }
 
 
 

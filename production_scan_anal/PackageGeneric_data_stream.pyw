@@ -19,7 +19,7 @@ try:
     project_name = "production_scan_anal"
     dataset_name = "MN_API_CheckpointScans_PackageGeneric"    
     filename_save = config_global.dir_dataset_download_dict["uploads"]   + dataset_name + ".csv"
-    filename_dataset_cfg = "./domo_dataset_cfg/dataset_id_table.json"
+    filename_dataset_cfg = "./domo_api_cfg/dataset_id_table.json"
         
     print("real-time data process")
     domo_sess = domo.DomoStream(domo.client_ID, domo.client_secret, domo.api_host)  
