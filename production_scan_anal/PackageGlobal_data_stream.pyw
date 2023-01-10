@@ -80,8 +80,8 @@ try:
         print("{0} uploaded to domo\n".format( filename_save))
     
     #grab timestamps of when script started and how far back in time we went    
-    ts_o = config.filter_date_start_local
-    ts_f = datetime.datetime.now()
+    ts_o = config.ts_now
+    ts_f = datetime.datetime.utcnow()
     print("MongoDB timestamp start: {0}".format(ts_o))
     print("MongoDB timestamp stop:  {0}".format(ts_f))
     
