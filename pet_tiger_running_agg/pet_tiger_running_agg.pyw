@@ -84,7 +84,7 @@ def main():
 
         #an overall breakdon of aggregrate worker stats
         DF_data_overall_agg = DF_data.groupby(by=["ExportIdentifier",
-                                                  "Employee_Name",
+                                                  "Employee_Name", #may be redundant given ExportIdentifier included in grouping
                                                   "Crew_Name",
                                                   "Ranch_Name",
                                                   "Field_Name",

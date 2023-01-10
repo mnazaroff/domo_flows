@@ -48,7 +48,8 @@ filter_date_start_local = ts_now_local - del_ts
 
 #real-time time filter settings
 #-------------------------------------------------------------------------------------------    
-del_ts_realtime = datetime.timedelta(hours = .25)   #how far back in time to grab records
+# del_ts_realtime = datetime.timedelta(hours = .25)   #how far back in time to grab records
+del_ts_realtime = datetime.timedelta(hours = 1*24)   #how far back in time to grab records
 filter_date_start_realtime = ts_now - del_ts_realtime        #starting timestamp for MongoDB filter
 filter_date_start_local_realtime = ts_now_local - del_ts_realtime
 

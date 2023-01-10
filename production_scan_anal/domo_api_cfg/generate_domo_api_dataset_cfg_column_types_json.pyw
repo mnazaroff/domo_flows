@@ -29,7 +29,7 @@ column_types_dict = {  #<description>
                                                                                 ColumnType.DATETIME,    #DateCreate
                                                                                 ColumnType.STRING,      #ProductComposite
                                                                                 ColumnType.LONG,        #ProductID
-                                                                                ColumnType.LONG,        #Size
+                                                                                ColumnType.STRING,      #Size
                                                                                 ColumnType.STRING,      #Style
                                                                                 ColumnType.STRING,      #Content
                                                                                 ColumnType.LONG,        #OriginCheckpointID
@@ -42,6 +42,7 @@ column_types_dict = {  #<description>
                                                                             ],
                       "MN_API_CheckpointScans_PackageGlobal_query_log"  :   [   ColumnType.DATETIME,    #DateTime_start
                                                                                 ColumnType.DATETIME,    #DateTime_stop
+                                                                                ColumnType.DATETIME,    #DateTime_query
                                                                                 ColumnType.DOUBLE,      #duration_proc_mins
                                                                                 ColumnType.LONG,        #count_read
                                                                                 ColumnType.LONG,        #count_success

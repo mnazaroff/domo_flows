@@ -41,6 +41,7 @@ column_names_dict = {    #<description>
                                                                                 ],
                         "MN_API_CheckpointScans_PackageGlobal_query_log"  :     [   "DateTime_start",
                                                                                     "DateTime_stop",
+                                                                                    "DateTime_query",
                                                                                     "duration_proc_mins",
                                                                                     "count_read",
                                                                                     "count_success",

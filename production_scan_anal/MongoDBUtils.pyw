@@ -72,12 +72,11 @@ def docs_to_table_package_generic_monolithic(docs):
 
 
 def docs_to_table_package_global_monolithic(docs):
-    doc_dict_CheckpointScans_list = []
-    
+    doc_dict_CheckpointScans_list = []    
     cnt_read = 0
     cnt_success = 0
-    for doc in docs:
-        
+    
+    for doc in docs:    
         try:
             
             cnt_read = cnt_read+1             
@@ -126,9 +125,9 @@ def docs_to_table_package_global_monolithic(docs):
 
         except KeyError as e:            
             print("{0}: {1} missing field {2}".format(cnt_read,  doc["_id"], e), end="\r", flush=True)
-            #print(doc["_id"])
-            #continue
-            return
+            print(doc["_id"])
+            continue
+            #return
             
     print("{0} records read".format(cnt_read))
     print("{0} records processed successfully".format(cnt_success))
@@ -136,7 +135,7 @@ def docs_to_table_package_global_monolithic(docs):
     return { "Data"             :   doc_dict_CheckpointScans_list,
              "count_read"       :   cnt_read,
              "count_success"    :   cnt_success,
-             "ratio_success"    :   cnt_success/cnt_read
+             "ratio_success"    :   0 if(cnt_read == 0) else cnt_success/cnt_read
            }
 
 

@@ -47,30 +47,37 @@ try:
     mongo_collect = mongo_db[mdb_collect]
     print(mongo_collect)            
     
-    docs = mongo_collect.find({ 'DateCreate': { '$gt': config.filter_date_start } })      
+    print("querying data created after {0}...".format(config.filter_date_start_realtime))
+    docs = mongo_collect.find({ 'DateCreate': { '$gt': config.filter_date_start_realtime } })      
     table_dicts = MongoDBUtils.docs_to_table_package_global_monolithic(docs)
-    
-    DF_package_generic = pd.DataFrame(table_dicts["Data"])
-    DF_p_table = pd.DataFrame(API.Invoke("Product_List"))[["ID", "ProductName"]].rename(columns={"ID" : "ProductID"})
-    DF_package_generic = pd.merge( DF_package_generic, DF_p_table,
-                                   left_on = ["ProductID"],
-                                   right_on = ["ProductID"],
-                                   how = "left"
-                                 )
-    
-    DF_package_generic.to_csv(filename_save, index=False)
-    print("data saved to:\n{0}".format(filename_save))
-    
+
     #upload data to Domo
     #load data set column type configuration from JSON file
     with open(filename_dataset_cfg, 'r') as fp_open:
-        dataset_id_table_dict = json.load( fp_open)
-    
+        dataset_id_table_dict = json.load( fp_open)        
+
     dataset_id = dataset_id_table_dict[project_name]["uploads"][dataset_name]
-    
-    result = domo_sess.DatasetReplaceCSV( dataset_id, filename_save)
-    print(result)
-    print("{0} uploaded to domo\n".format( filename_save))
+
+    if (table_dicts["count_read"] == 0):
+        print("no data from query")
+
+    else:
+        DF_package_global = pd.DataFrame(table_dicts["Data"])
+        DF_p_table = pd.DataFrame(API.Invoke("Product_List"))[["ID", "ProductName"]].rename(columns={"ID" : "ProductID"})
+        DF_package_global = pd.merge( DF_package_global, DF_p_table,
+                                       left_on = ["ProductID"],
+                                       right_on = ["ProductID"],
+                                       how = "left"
+                                     )
+        
+        DF_package_global.to_csv(filename_save, index=False)
+        print("data saved to:\n{0}".format(filename_save))
+        
+        
+        
+        result = domo_sess.DatasetReplaceCSV( dataset_id, filename_save)
+        print(result)
+        print("{0} uploaded to domo\n".format( filename_save))
     
     #grab timestamps of when script started and how far back in time we went    
     ts_o = config.filter_date_start_local
@@ -86,6 +93,7 @@ try:
     #save log to file and stream to Domo    
     pd.DataFrame({  "DateTime_start"        :   [ts_o],
                     "DateTime_stop"         :   [ts_f],
+                    "DateTime_query"        :   [config.filter_date_start_realtime],
                     "duration_proc_mins"    :   [duration_proc_mins],
                     "count_read"            :   [table_dicts["count_read"]],
                     "count_success"         :   [table_dicts["count_success"]],
@@ -97,7 +105,6 @@ try:
     result = domo_sess.DatasetReplaceCSV( dataset_log_id, filename_log)
     print(result)
     print("{0} uploaded to domo\n".format( filename_log))
-
     
 except Exception as e:            
     if "Error uploading DataSet" in e.args[0]:        
