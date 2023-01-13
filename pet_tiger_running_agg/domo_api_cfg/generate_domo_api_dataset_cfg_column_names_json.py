@@ -8,18 +8,22 @@ import json
 
 #lookup table of dataset name and column names
 column_names_dict = {    #<description>
-                         "pet_tiger_running_agg"    :   [   "ExportIdentifier",
-                                                            "Employee_Name",
-                                                            "Crew_Name",
-                                                            "Ranch_Name",
-                                                            "Field_Name",
-                                                            "DateIn",
-                                                            "Start_Time",
-                                                            "End_Time",
-                                                            "Wage_HR",
-                                                            "Total_Pieces",
-                                                            "Pieces_per_Hour"
-                                                        ]            
+                         "MN_API_Pet_Tiger_Running_Agg"    :   [    "ExportIdentifier",
+                                                                    "Employee_Name",
+                                                                    "Crew_Name",
+                                                                    "Job_Name",
+                                                                    "RanchCounter",
+                                                                    "BlockID",
+                                                                    "DateIn",
+                                                                    "DateTimeIn",
+                                                                    "DateTimeOut",
+                                                                    "NetTime",
+                                                                    "Work_Time",
+                                                                    "BreakTime",
+                                                                    "Wage_HR",
+                                                                    "Total_Pieces",
+                                                                    "Pieces_per_Hour"
+                                                                ]            
 }
 
 #save dataset name-id dictionary to json file

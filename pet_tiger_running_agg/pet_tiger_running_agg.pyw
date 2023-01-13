@@ -14,7 +14,7 @@ from domo_api import domo
 def main():
     try:
         project_name = "pet_tiger_running_agg"
-        dataset_name = "pet_tiger_running_agg"    
+        dataset_name = "MN_API_Pet_Tiger_Running_Agg"    
         filename_save = config_global.dir_dataset_download_dict["uploads"]   + dataset_name + ".csv"
         filename_dataset_cfg = "./domo_api_cfg/dataset_id_table.json"
 
@@ -77,7 +77,7 @@ def main():
                                  right_on=["JobCounter"],
                                  how="left")
 
-        DF_data = DF_data[[ "ExportIdentifier", "Employee_Name","Crew_Name", "Ranch_Name", "Field_Name",
+        DF_data = DF_data[[ "ExportIdentifier", "Employee_Name","Crew_Name", "RanchCounter", "Field_ExportIdentifier",
                             "Job_Name", "DateIn", "DateOut", "DateTimeIn", "DateTimeOut",
                             "NetTime", "BreakTime", "HourlyRate", "Pieces"
                          ]]
@@ -86,8 +86,9 @@ def main():
         DF_data_overall_agg = DF_data.groupby(by=["ExportIdentifier",
                                                   "Employee_Name", #may be redundant given ExportIdentifier included in grouping
                                                   "Crew_Name",
-                                                  "Ranch_Name",
-                                                  "Field_Name",
+                                                  "Job_Name",
+                                                  "RanchCounter",
+                                                  "Field_ExportIdentifier",
                                                   "DateIn"
                                                   ],
                                                   as_index=False
@@ -98,23 +99,27 @@ def main():
                                                       "HourlyRate"  : "max",
                                                       "Pieces"      : "sum"
                                               })
-
+        
         DF_data_overall_agg["Work_Time"] = DF_data_overall_agg["NetTime"] - DF_data_overall_agg["BreakTime"]
         DF_data_overall_agg["Pieces_per_Hour"] = DF_data_overall_agg["Pieces"]/DF_data_overall_agg["Work_Time"]
-        DF_data_overall_agg["Start_Time"] = DF_data_overall_agg["DateTimeIn"].dt.time
-        DF_data_overall_agg["End_Time"] = DF_data_overall_agg["DateTimeOut"].dt.time
+        #DF_data_overall_agg["Start_Time"] = DF_data_overall_agg["DateTimeIn"].dt.time
+        #DF_data_overall_agg["End_Time"] = DF_data_overall_agg["DateTimeOut"].dt.time
 
-        DF_data_overall_agg.rename(columns={ "HourlyRate" : "Wage_HR", "Pieces" : "Total_Pieces"}, inplace=True)
-
-        DF_data_overall_agg = DF_data_overall_agg[[ "ExportIdentifier", "Employee_Name", "Crew_Name", "Ranch_Name", "Field_Name",
-                                              "DateIn", "Start_Time", "End_Time", "Wage_HR", "Total_Pieces",
-                                              "Pieces_per_Hour"                  
-                                           ]]
-
-        DF_data_overall_agg = DF_data_overall_agg.sort_values(by=["ExportIdentifier", "DateIn", "Start_Time"]).reset_index(drop=True)
-        DF_data_overall_agg.to_csv(filename_save, index = False)
-        print("results saved to:\n{0}".format(filename_save))
+        DF_data_overall_agg.rename(columns={ "HourlyRate" : "Wage_HR", "Pieces" : "Total_Pieces", "Field_ExportIdentifier" : "BlockID"}, inplace=True)
+        #DF_data_overall_agg.to_csv("DF_data_overall_agg_before.csv", index=False)
+##        DF_data_overall_agg = DF_data_overall_agg[[ "ExportIdentifier", "Employee_Name", "Crew_Name", "Ranch_Name", "Field_Name",
+##                                              "DateIn", "Start_Time", "End_Time", "Wage_HR", "Total_Pieces",
+##                                              "Pieces_per_Hour"                  
+##                                           ]]
         
+        DF_data_overall_agg = DF_data_overall_agg.sort_values(by=["ExportIdentifier", "DateTimeIn"]).reset_index(drop=True)
+        DF_data_overall_agg = DF_data_overall_agg[[ "ExportIdentifier", "Employee_Name", "Crew_Name", "Job_Name", "RanchCounter",
+                                                    "BlockID", "DateIn", "DateTimeIn", "DateTimeOut", "NetTime",
+                                                    "Work_Time", "BreakTime", "Wage_HR", "Total_Pieces", "Pieces_per_Hour"                  
+                                                 ]]
+        
+        DF_data_overall_agg.to_csv(filename_save, index = False)
+        print("results saved to:\n{0}".format(filename_save))        
 
         #upload data to Domo
         domo_sess = domo.DomoStream(domo.client_ID, domo.client_secret, domo.api_host)
@@ -126,8 +131,8 @@ def main():
         dataset_id = dataset_id_table_dict[project_name]["uploads"][dataset_name]        
         result = domo_sess.DatasetReplaceCSV( dataset_id, filename_save)
         print(result)
-        print("{0} uploaded to domo\n".format( filename_save))
-         
+        print("{0} uploaded to domo\n".format( filename_save))        
+        
     except Exception as e:
         template = "An exception oftype {0} occurred arguments:\n{1!r}"
         message = template.format(type(e).__name__, e.args)

@@ -48,8 +48,8 @@ query_table_dict = {
     #field data
     "query_field"       :   """
                             SELECT
-                                FieldCounter	AS  FieldCounter,
-                                Name 		AS  Field_Name
+                                FieldCounter	    AS  FieldCounter,                                
+                                ExportIdentifier    AS  Field_ExportIdentifier
                             FROM
                                 Field
                             """,
@@ -92,14 +92,14 @@ query_table_dict = {
                                 JobCard
                             WHERE
                                     Deleted = 0
-                                AND YEAR(DateTimeIn) = YEAR(GETDATE())
+                                AND DateTimeIn >= DATEADD(year, -1, GETDATE())
                             """,
 
     #ranch data
     "query_ranch"       :   """
                             SELECT
                                 RanchCounter    AS	RanchCounter,
-                                Name 	    AS	Ranch_Name
+                                Name 	        AS	Ranch_Name
                             FROM
                                 Ranch
                             """

@@ -1,1 +1,1 @@
-{"pet_tiger_running_agg": ["STRING", "STRING", "STRING", "STRING", "STRING", "STRING", "STRING", "STRING", "DOUBLE", "DOUBLE", "DOUBLE"]}
+{"MN_API_Pet_Tiger_Running_Agg": ["STRING", "STRING", "STRING", "STRING", "LONG", "STRING", "STRING", "DATETIME", "DATETIME", "DOUBLE", "DOUBLE", "DOUBLE", "DOUBLE", "DOUBLE", "DOUBLE"]}
