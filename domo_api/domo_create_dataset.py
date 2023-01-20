@@ -13,8 +13,8 @@ from pydomo.datasets import ColumnType
 def main():   
     try:
         
-        project_name = "pet_tiger_running_agg"
-        dataset_name = "MN_API_Pet_Tiger_Running_Agg"
+        project_name = "production_block_list"
+        dataset_name = "MN_API_production_block_list"
 
         dir_project_domo_cfg = config_global.dir_project_root + project_name + "/domo_api_cfg/"
 
