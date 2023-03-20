@@ -89,8 +89,21 @@ def docs_to_table_package_global_monolithic(docs):
                     CheckweigherResultAvg = doc["CheckweigherResult"]["Weight"]
                 else:
                     CheckweigherResultAvg = None
+                    
+                if "TareWeight" in doc["CheckweigherResult"].keys():
+                    TareWeight = doc["CheckweigherResult"]["TareWeight"]                    
+                #use default values from API product table if Tareweight missing
+                else:
+                    TareWeight = None
+                    
+                if "NetWeight" in doc["CheckweigherResult"].keys():
+                    NetWeight = doc["CheckweigherResult"]["NetWeight"]
+                else:
+                    NetWeight = None
             else:
                 CheckweigherResultAvg = None
+                TareWeight = None
+                NetWeight = None
            
             #check if AttributeDataMatrix scan scores are available
             DataMatrixExists = False
@@ -115,6 +128,8 @@ def docs_to_table_package_global_monolithic(docs):
                                                     "PrintSize"                 :   doc["PrintSize"] if ("PrintSize" in doc.keys()) else None,
                                                     "FruitCount"                :   doc["FruitCount"] if ("FruitCount" in doc.keys()) else None,
                                                     "CheckweigherResultAvg"     :   CheckweigherResultAvg,
+                                                    "TareWeight"                :   TareWeight,
+                                                    "NetWeight"                 :   NetWeight,
                                                     "DataMatrixExists"          :   DataMatrixExists,
                                                     "PTIExists"                 :   "AttributePTI" in doc.keys()
                                                 }

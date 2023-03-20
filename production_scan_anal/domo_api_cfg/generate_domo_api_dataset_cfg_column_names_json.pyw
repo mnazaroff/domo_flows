@@ -35,6 +35,8 @@ column_names_dict = {    #<description>
                                                                                     "PrintSize",
                                                                                     "FruitCount",
                                                                                     "CheckweigherResultAvg",
+                                                                                    "TareWeight",
+                                                                                    "NetWeight",
                                                                                     "DataMatrixExists",
                                                                                     "PTIExists",
                                                                                     "ProductName"

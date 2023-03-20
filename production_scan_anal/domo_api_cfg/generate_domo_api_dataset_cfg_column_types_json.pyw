@@ -36,6 +36,8 @@ column_types_dict = {  #<description>
                                                                                 ColumnType.STRING,      #PrintSize
                                                                                 ColumnType.LONG,        #FruitCount
                                                                                 ColumnType.DOUBLE,      #CheckweigherResultAvg
+                                                                                ColumnType.DOUBLE,      #TareWeight
+                                                                                ColumnType.DOUBLE,      #NetWeight
                                                                                 ColumnType.STRING,      #DataMatrixExists
                                                                                 ColumnType.STRING,      #PTIExists
                                                                                 ColumnType.STRING       #ProductName

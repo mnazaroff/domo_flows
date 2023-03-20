@@ -63,12 +63,15 @@ try:
 
     else:
         DF_package_global = pd.DataFrame(table_dicts["Data"])
-        DF_p_table = pd.DataFrame(API.Invoke("Product_List"))[["ID", "ProductName"]].rename(columns={"ID" : "ProductID"})
+        DF_p_table = pd.DataFrame(API.Invoke("Product_List"))[["ID", "ProductName", "Tare"]].rename(columns={"ID" : "ProductID", "Tare" : "Tare_default"})
         DF_package_global = pd.merge( DF_package_global, DF_p_table,
                                        left_on = ["ProductID"],
                                        right_on = ["ProductID"],
                                        how = "left"
                                      )
+        #fill in missing TareWeight values with product defaults
+        DF_package_global["TareWeight"].fillna(DF_package_global["Tare_default"] , inplace=True)
+        DF_package_global.drop(labels=["Tare_default"], axis=1, inplace=True)
         
         DF_package_global.to_csv(filename_save, index=False)
         print("data saved to:\n{0}".format(filename_save))
@@ -104,11 +107,11 @@ try:
     
     result = domo_sess.DatasetReplaceCSV( dataset_log_id, filename_log)
     print(result)
-    print("{0} uploaded to domo\n".format( filename_log))
+    print("{0} uploaded to domo\n".format( filename_log))    
     
 except Exception as e:            
     if "Error uploading DataSet" in e.args[0]:        
-        print("unable to upload file {0} to {1}".format(filename, api_table))
+        print("unable to upload file {0} to {1}".format(filename_save, dataset_id))
     else:
         print(e)
         

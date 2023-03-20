@@ -1,42 +1,42 @@
 ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,ParentRemoteID,ParentProcessIsEnabled,ParentProcessIsOnline,PluginClassName,RemoteID,IsVisible,DisplayName,Role,HasDebugInfo,RequireExplicitRouting,ProcessIsEnabled,ProcessIsOnline,ProcessIsRouteBlocked,RouteWeight,UISide,Size,OutletStatus
-1,1,GBF 1,,,,,,,GBFSimple,5,0,,GBF,0,0,1,1,0,1.0,,60/64,OK
-2,2,GBF 2,,,,,,,GBFSimple,7,0,,GBF,0,0,1,1,0,1.0,,18g,OK
-3,3,GBF 3,,,,,,,GBFSimple,8,0,,GBF,0,0,1,1,0,1.0,,60/64,OK
-4,4,GBF 4,,,,,,,GBFSimple,10,0,,GBF,0,0,1,1,0,1.0,,75,OK
-5,5,GBF 5,,,,,,,GBFSimple,11,0,,GBF,0,0,1,1,0,1.0,,60/64,OK
-6,6,GBF 6,,,,,,,GBFSimple,13,0,,GBF,0,0,1,1,0,1.0,,54/56,OK
-7,7,GBF 7,,,,,,,GBFSimple,14,0,,GBF,0,0,1,1,0,1.0,,95,OK
-8,8,GBF 8,,,,,,,GBFSimple,15,0,,GBF,0,0,1,1,0,1.0,,75,OK
-9,9,GBF 9,,,,,,,GBFSimple,16,0,,GBF,0,0,1,1,0,1.0,,75,OK
-10,10,GBF 10,,,,,,,GBFSimple,17,0,,GBF,1,0,1,1,0,1.0,,95,OK
-11,11,GBF 11,,,,,,,GBFSimple,18,0,,GBF,0,0,1,1,0,1.0,,95,OK
-12,12,GBF 12,,,,,,,GBFSimple,19,0,,GBF,0,0,1,1,0,1.0,,95,OK
-13,13,GBF 13,,,,,,,GBFSimple,20,0,,GBF,0,0,1,1,0,1.0,,165,OK
+1,1,GBF 1,,,,,,,GBFSimple,5,0,,PackageCreate,0,0,1,1,0,1.0,,60/64,OK
+2,2,GBF 2,,,,,,,GBFSimple,7,0,,PackageCreate,0,0,1,1,0,1.0,,95,OK
+3,3,GBF 3,,,,,,,GBFSimple,8,0,,PackageCreate,0,0,1,1,0,1.0,,60/64,OK
+4,4,GBF 4,,,,,,,GBFSimple,10,0,,PackageCreate,0,0,1,1,0,1.0,,75,OK
+5,5,GBF 5,,,,,,,GBFSimple,11,0,,PackageCreate,0,0,1,1,0,1.0,,75,OK
+6,6,GBF 6,,,,,,,GBFSimple,13,0,,PackageCreate,0,0,1,1,0,1.0,,54/56,OK
+7,7,GBF 7,,,,,,,GBFSimple,14,0,,PackageCreate,0,0,1,1,0,1.0,,95,OK
+8,8,GBF 8,,,,,,,GBFSimple,15,0,,PackageCreate,0,0,1,1,0,1.0,,95,OK
+9,9,GBF 9,,,,,,,GBFSimple,16,0,,PackageCreate,0,0,1,1,0,1.0,,75,OK
+10,10,GBF 10,,,,,,,GBFSimple,17,0,,PackageCreate,1,0,1,1,0,1.0,,95,OK
+11,11,GBF 11,,,,,,,GBFSimple,18,0,,PackageCreate,0,0,1,1,0,1.0,,95,OK
+12,12,GBF 12,,,,,,,GBFSimple,19,0,,PackageCreate,0,0,1,1,0,1.0,,95,OK
+13,13,GBF 13,,,,,,,GBFSimple,20,0,,PackageCreate,0,0,1,1,0,1.0,,165,OK
 14,14,Unused - Router Pass/Fail Barcode,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
 15,15,Unused -Lookup PTI,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
 16,16,Unused -ln checkpoint 16,,,,,,,,remote id 16x,0,test,FruitDump,0,0,1,1,0,1.0,,,
 17,17,Lower Line 2,,160.0,"Pack Table North 1 - Outlets 1,2",,1.0,1.0,PackTable,lower.1,0,Line 2,PacktablesNorth,0,0,1,1,0,1.0,RHS,32,Disabled
-18,18,Lower Line 3,,186.0,"Pack Table South 1 - Outlets 3,4",,1.0,1.0,PackTable,lower.2,0,Line 3,PacktablesSouth,0,0,1,1,0,1.0,LHS,165,OK
-19,19,Lower Line 4,,186.0,"Pack Table South 1 - Outlets 3,4",,1.0,1.0,PackTable,lower.3,0,Line 4,PacktablesSouth,0,0,1,1,0,1.0,RHS,75,Unassigned
-20,20,Lower Line 5,,161.0,"Pack Table North 2 - Outlets 5,6",,1.0,1.0,PackTable,lower.4,0,Line 5,PacktablesNorth,0,0,1,1,0,1.0,LHS,21a,Disabled
-21,21,Lower Line 6,,161.0,"Pack Table North 2 - Outlets 5,6",,1.0,1.0,PackTable,lower.5,0,Line 6,PacktablesNorth,0,0,1,1,0,1.0,RHS,15,Disabled
-22,22,Lower Line 7,,187.0,"Pack Table South 2 - Outlets 7,8",,1.0,1.0,PackTable,lower.6,0,Line 7,PacktablesSouth,0,0,1,1,0,1.0,LHS,75,Unassigned
-23,23,Lower Line 8,,187.0,"Pack Table South 2 - Outlets 7,8",,1.0,1.0,PackTable,lower.7,0,Line 8,PacktablesSouth,0,0,1,1,0,1.0,RHS,140,Unassigned
-24,24,Lower Line 9,,162.0,"Pack Table North 3 - Outlets 9,10",,1.0,1.0,PackTable,lower.8,0,Line 9,PacktablesNorth,0,0,1,1,0,1.0,LHS,8,Disabled
-25,25,Lower Line 10,,162.0,"Pack Table North 3 - Outlets 9,10",,1.0,1.0,PackTable,lower.9,0,Line 10,PacktablesNorth,0,0,1,1,0,1.0,RHS,8,Disabled
-26,26,Lower Line 11,,188.0,"Pack Table South 3 - Outlets 11,12",,1.0,1.0,PackTable,lower.10,0,Line 11,PacktablesSouth,0,0,1,1,0,1.0,LHS,115,OK
-27,27,Lower Line 12,,188.0,"Pack Table South 3 - Outlets 11,12",,1.0,1.0,PackTable,lower.11,0,Line 12,PacktablesSouth,0,0,1,1,0,1.0,RHS,63,OK
-28,28,Lower Line 13,,163.0,"Pack Table North 4 - Outlets 13,14",,1.0,1.0,PackTable,lower.12,0,Line 13,PacktablesNorth,0,0,1,1,0,1.0,LHS,8,Disabled
-29,29,Lower Line 14,,163.0,"Pack Table North 4 - Outlets 13,14",,1.0,1.0,PackTable,lower.13,0,Line 14,PacktablesNorth,0,0,1,1,0,1.0,RHS,7,Disabled
-30,30,Lower Line 15,,189.0,"Pack Table South 4 - Outlets 15,16",,1.0,1.0,PackTable,lower.14,0,Line 15,PacktablesSouth,0,0,1,1,0,1.0,LHS,140,OK
-31,31,Lower Line 16,,189.0,"Pack Table South 4 - Outlets 15,16",,1.0,1.0,PackTable,lower.15,0,Line 16,PacktablesSouth,0,0,1,1,0,1.0,RHS,115,OK
-32,32,Lower Line 17,,164.0,"Pack Table North 5 - Outlets 17,18",,1.0,1.0,PackTable,lower.16,0,Line 17,PacktablesNorth,0,0,1,1,0,1.0,LHS,7,Disabled
-33,33,Lower Line 18,,164.0,"Pack Table North 5 - Outlets 17,18",,1.0,1.0,PackTable,lower.17,0,Line 18,PacktablesNorth,0,0,1,1,0,1.0,RHS,7,Disabled
-34,34,Lower Line 19,31.0,190.0,"Pack Table South 5 - Outlets 19,20",,1.0,1.0,PackTable,lower.18,0,Line 19,PacktablesSouth,0,0,1,1,0,1.0,LHS,140,OK
-35,35,Lower Line 20,38.0,190.0,"Pack Table South 5 - Outlets 19,20",,1.0,1.0,PackTable,lower.19,0,Line 20,PacktablesSouth,0,0,1,1,0,1.0,RHS,200,OK
-36,36,Lower Line 21,,165.0,"Pack Table North 6 - Outlets 21,22",,1.0,1.0,PackTable,lower.20,0,Line 21,PacktablesNorth,0,0,1,1,0,1.0,LHS,8,Disabled
-37,37,Lower Line 22,,165.0,"Pack Table North 6 - Outlets 21,22",,1.0,1.0,PackTable,lower.21,0,Line 22,PacktablesNorth,0,0,1,1,0,1.0,RHS,8,Disabled
-38,38,Lower Line 23,35.0,191.0,"Pack Table South 6 - Outlets 23,24",,1.0,1.0,PackTable,lower.22,0,Line 23,PacktablesSouth,0,0,1,1,0,1.0,LHS,95,OK
+18,18,Lower Line 3,,186.0,"Pack Table South 1 - Outlets 3,4",,1.0,1.0,PackTable,lower.2,0,Line 3,PacktablesSouth,0,0,1,1,0,1.0,LHS,32,Unassigned
+19,19,Lower Line 4,,186.0,"Pack Table South 1 - Outlets 3,4",,1.0,1.0,PackTable,lower.3,0,Line 4,PacktablesSouth,0,0,1,1,0,1.0,RHS,28,Unassigned
+20,20,Lower Line 5,,161.0,"Pack Table North 2 - Outlets 5,6",,1.0,1.0,PackTable,lower.4,0,Line 5,PacktablesNorth,0,0,1,1,0,1.0,LHS,21a,Unassigned
+21,21,Lower Line 6,,161.0,"Pack Table North 2 - Outlets 5,6",,1.0,1.0,PackTable,lower.5,0,Line 6,PacktablesNorth,0,0,1,1,0,1.0,RHS,25,Unassigned
+22,22,Lower Line 7,,187.0,"Pack Table South 2 - Outlets 7,8",,1.0,1.0,PackTable,lower.6,0,Line 7,PacktablesSouth,0,0,1,1,0,1.0,LHS,36a,OK
+23,23,Lower Line 8,,187.0,"Pack Table South 2 - Outlets 7,8",,1.0,1.0,PackTable,lower.7,0,Line 8,PacktablesSouth,0,0,1,1,0,1.0,RHS,21,OK
+24,24,Lower Line 9,,162.0,"Pack Table North 3 - Outlets 9,10",,1.0,1.0,PackTable,lower.8,0,Line 9,PacktablesNorth,0,0,1,1,0,1.0,LHS,25,Disabled
+25,25,Lower Line 10,,162.0,"Pack Table North 3 - Outlets 9,10",,1.0,1.0,PackTable,lower.9,0,Line 10,PacktablesNorth,0,0,1,1,0,1.0,RHS,25,Unassigned
+26,26,Lower Line 11,,188.0,"Pack Table South 3 - Outlets 11,12",,1.0,1.0,PackTable,lower.10,0,Line 11,PacktablesSouth,0,0,1,1,0,1.0,LHS,24,OK
+27,27,Lower Line 12,,188.0,"Pack Table South 3 - Outlets 11,12",,1.0,1.0,PackTable,lower.11,0,Line 12,PacktablesSouth,0,0,1,1,0,1.0,RHS,32,OK
+28,28,Lower Line 13,,163.0,"Pack Table North 4 - Outlets 13,14",,1.0,1.0,PackTable,lower.12,0,Line 13,PacktablesNorth,0,0,1,1,0,1.0,LHS,28,Unassigned
+29,29,Lower Line 14,,163.0,"Pack Table North 4 - Outlets 13,14",,1.0,1.0,PackTable,lower.13,0,Line 14,PacktablesNorth,0,0,1,1,0,1.0,RHS,28,Unassigned
+30,30,Lower Line 15,,189.0,"Pack Table South 4 - Outlets 15,16",,1.0,1.0,PackTable,lower.14,0,Line 15,PacktablesSouth,0,0,1,1,0,1.0,LHS,36,OK
+31,31,Lower Line 16,,189.0,"Pack Table South 4 - Outlets 15,16",,1.0,1.0,PackTable,lower.15,0,Line 16,PacktablesSouth,0,0,1,1,0,1.0,RHS,28,OK
+32,32,Lower Line 17,,164.0,"Pack Table North 5 - Outlets 17,18",,1.0,1.0,PackTable,lower.16,0,Line 17,PacktablesNorth,0,0,1,1,0,1.0,LHS,24,Unassigned
+33,33,Lower Line 18,,164.0,"Pack Table North 5 - Outlets 17,18",,1.0,1.0,PackTable,lower.17,0,Line 18,PacktablesNorth,0,0,1,1,0,1.0,RHS,28,Unassigned
+34,34,Lower Line 19,31.0,190.0,"Pack Table South 5 - Outlets 19,20",,1.0,1.0,PackTable,lower.18,0,Line 19,PacktablesSouth,0,0,1,1,0,1.0,LHS,36,Unassigned
+35,35,Lower Line 20,38.0,190.0,"Pack Table South 5 - Outlets 19,20",,1.0,1.0,PackTable,lower.19,0,Line 20,PacktablesSouth,0,0,1,1,0,1.0,RHS,28,Unassigned
+36,36,Lower Line 21,,165.0,"Pack Table North 6 - Outlets 21,22",,1.0,1.0,PackTable,lower.20,0,Line 21,PacktablesNorth,0,0,1,1,0,1.0,LHS,25,Unassigned
+37,37,Lower Line 22,,165.0,"Pack Table North 6 - Outlets 21,22",,1.0,1.0,PackTable,lower.21,0,Line 22,PacktablesNorth,0,0,1,1,0,1.0,RHS,40,Unassigned
+38,38,Lower Line 23,35.0,191.0,"Pack Table South 6 - Outlets 23,24",,1.0,1.0,PackTable,lower.22,0,Line 23,PacktablesSouth,0,0,1,1,0,1.0,LHS,44,OK
 39,39,Lower Line ATip,,,,,,,,lower.atip,0,,,0,0,1,1,0,1.0,,,
 40,40,Outside Print Cabinet,,,,,,,Printer,,1,Outside Print Cabinet,Printer,1,0,1,1,0,1.0,,,
 41,41,Unused - Process Sticker,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
@@ -68,11 +68,11 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 67,67,Outside Lane Print Cabinet Exit,,,,,,,,,0,Outside Lane Print Cabinet Exit,Lane,0,0,1,1,0,1.0,,,
 68,68,3to1 Merge Ramp,,,,,,,,,0,Exit Ramp to Palletizing,Exit,0,0,1,1,0,1.0,,,
 69,69,Packline End Node,,,,,,,,,0,Packline End,,0,0,1,1,0,1.0,,,
-70,70,CasePacker1,,,,,,,CasePacker,CasePacker.1,0,Bagger 3,PackageCreate,0,0,1,1,0,1.0,,115,OK
-71,71,CasePacker2,,,,,,,CasePacker,CasePacker.2,0,Bagger 2,PackageCreate,0,0,1,1,0,1.0,,115,OK
-72,72,CasePacker3,,,,,,,CasePacker,CasePacker.3,0,Bagger 1,PackageCreate,0,0,1,1,0,1.0,,24,OK
-73,73,CasePacker4,,,,,,,CasePacker,CasePacker.4,0,Bagger 5,PackageCreate,0,0,1,1,0,1.0,,140,OK
-74,74,CasePacker5,,,,,,,CasePacker,CasePacker.5,0,Bagger 4,PackageCreate,0,0,1,1,0,1.0,,140,OK
+70,70,CasePacker1,,,,,,,CasePacker,CasePacker.1,0,Bagger 3,PackageCreate,0,0,1,1,0,1.0,,28,OK
+71,71,CasePacker2,,,,,,,CasePacker,CasePacker.2,0,Bagger 2,PackageCreate,0,0,1,1,0,1.0,,36a,OK
+72,72,CasePacker3,,,,,,,CasePacker,CasePacker.3,0,Bagger 1,PackageCreate,0,0,1,1,0,1.0,,36a,OK
+73,73,CasePacker4,,,,,,,CasePacker,CasePacker.4,0,Bagger 5,PackageCreate,0,0,1,1,0,1.0,,36,OK
+74,74,CasePacker5,,,,,,,CasePacker,CasePacker.5,0,Bagger 4,PackageCreate,0,0,1,1,0,1.0,,32,OK
 75,75,Label Dispenser B8:27:EB:37:2D:FC,,,,,,,,lower.4,0,,,0,0,1,1,0,1.0,,,
 76,76,Inside Print Cabinet,,,,,,,Printer,,1,Inside Print Cabinet,Printer,1,0,1,1,0,1.0,,,
 77,77,Middle Print Cabinet,,,,,,,Printer,,1,Middle Print Cabinet,Printer,1,0,1,1,0,1.0,,,
@@ -116,7 +116,7 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 115,115,Label Dispenser b8:27:eb:54:57:35,,,,,,,,lower.16,0,,,0,0,1,1,0,1.0,,,
 116,116,Camera Test,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
 117,117,GPIO v4,,,,,,,,,0,,"vision,gpio",0,0,1,1,0,1.0,,,
-118,118,Inside Merge Print 1,,,,,,,MPERIA,,0,Inside Merge Print 1,,0,1,1,0,0,0.8,,,
+118,118,Inside Merge Print 1,,,,,,,SATO,,0,Inside Merge Print 1,,0,1,1,1,0,0.8,,,
 119,119,Middle Merge Print 1,,,,,,,MPERIA,,0,Middle Merge Print 1,,0,1,1,1,0,1.0,,,
 120,120,Outside Merge Print 1,,,,,,,MPERIA,,0,Outside Merge Print 1,,0,1,0,1,0,1.0,,,
 121,121,Bandall Inside,,,,,,,,,0,Bandall Inside,,0,0,1,1,0,1.0,,,
@@ -130,26 +130,26 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 129,129,Label Dispenser b8:27:eb:8f:99:e5,,,,,,,,lower.6,0,,,0,0,1,1,0,1.0,,,
 130,130,Label Dispenser b8:27:eb:09:e6:3f,,,,,,,,lower.21,0,,,0,0,1,1,0,1.0,,,
 131,131,Label Dispenser b8:27:eb:78:bc:15,,,,,,,,lower.25,0,,,0,0,1,1,0,1.0,,,
-132,132,Accumulator 1,,,,,,,,9,0,Accumulator 1 - Bagger 1 CMSA 3,Accumulator,0,0,1,1,0,1.0,,140,Disabled
-133,133,Accumulator 2,,,,,,,,9,0,Accumulator 2 - Bagger 1 CMSA 3,Accumulator,0,0,1,1,0,1.0,,140,Disabled
-134,134,Accumulator 3,,,,,,,,6,0,Accumulator 3 - Bagger 2 CMSA 2,Accumulator,0,0,1,1,0,1.0,,115,OK
-135,135,Accumulator 4,,,,,,,,6,0,Accumulator 4 - Bagger 2 CMSA 2,Accumulator,0,0,1,1,0,1.0,,115,OK
-136,136,Accumulator 5,,,,,,,,lower.10,0,Accumulator 5 - Bagger 1 CMSA 1,Accumulator,0,0,1,1,0,1.0,,115,OK
-137,137,Accumulator 6,,,,,,,,lower.15,0,Accumulator 6 - Bagger 1 CMSA 1,Accumulator,0,0,1,1,0,1.0,,115,OK
-138,138,Accumulator 7,,,,,,,,lower.7,0,Accumulator 7 - Bagger 4 CMSA 4,Accumulator,0,0,1,1,0,1.0,,140,Unassigned
-139,139,Accumulator 8,,,,,,,,lower.11,0,Accumulator 8 - Bagger 4 CMSA 4,Accumulator,0,0,1,1,0,1.0,,63,OK
-140,140,Accumulator 9,,,,,,,,12,0,Accumulator 9 - Bagger 5 CMSA 5,Accumulator,0,0,1,1,0,1.0,,140,OK
-141,141,Accumulator 10,,,,,,,,12,0,Accumulator 10 - Bagger 5 CMSA 5,Accumulator,0,0,1,1,0,1.0,,140,OK
+132,132,Accumulator 1,,,,,,,,9,0,Accumulator 1 - Bagger 1 CMSA 3,Accumulator,0,0,1,1,0,1.0,,36a,OK
+133,133,Accumulator 2,,,,,,,,9,0,Accumulator 2 - Bagger 1 CMSA 3,Accumulator,0,0,1,1,0,1.0,,36a,OK
+134,134,Accumulator 3,,,,,,,,6,0,Accumulator 3 - Bagger 2 CMSA 2,Accumulator,0,0,1,1,0,1.0,,44,OK
+135,135,Accumulator 4,,,,,,,,6,0,Accumulator 4 - Bagger 2 CMSA 2,Accumulator,0,0,1,1,0,1.0,,44,OK
+136,136,Accumulator 5,,,,,,,,lower.10,0,Accumulator 5 - Bagger 1 CMSA 1,Accumulator,0,0,1,1,0,1.0,,24,OK
+137,137,Accumulator 6,,,,,,,,lower.15,0,Accumulator 6 - Bagger 1 CMSA 1,Accumulator,0,0,1,1,0,1.0,,28,OK
+138,138,Accumulator 7,,,,,,,,lower.7,0,Accumulator 7 - Bagger 4 CMSA 4,Accumulator,0,0,1,1,0,1.0,,21,OK
+139,139,Accumulator 8,,,,,,,,lower.11,0,Accumulator 8 - Bagger 4 CMSA 4,Accumulator,0,0,1,1,0,1.0,,32,OK
+140,140,Accumulator 9,,,,,,,,12,0,Accumulator 9 - Bagger 5 CMSA 5,Accumulator,0,0,1,1,0,1.0,,36,OK
+141,141,Accumulator 10,,,,,,,,12,0,Accumulator 10 - Bagger 5 CMSA 5,Accumulator,0,0,1,1,0,1.0,,36,OK
 142,142,PatternPacker1,,,,,,,PatternPacker,,0,Pattern Packer 1,PatternPacker,0,0,1,1,0,1.0,,115,OK
-143,143,PatternPacker2,,,,,,,PatternPacker,6,0,Pattern Packer 2,PatternPacker,0,0,1,1,0,1.0,,115,OK
-144,144,PatternPacker3,,,,,,,PatternPacker,12,0,Pattern Packer 3,PatternPacker,0,0,1,1,0,1.0,,140,OK
-145,145,Inside Merge 2,,,,,,,MPERIA,,0,Sato 1 - Inside Lane,,0,1,1,0,0,1.0,,,
-146,146,Outside Merge 1,,,,,,,SATO,,0,Outside ID SATO,,0,0,0,1,0,1.0,,,
+143,143,PatternPacker2,,,,,,,PatternPacker,6,0,Pattern Packer 2,PatternPacker,0,0,1,1,0,1.0,,44,OK
+144,144,PatternPacker3,,,,,,,PatternPacker,12,0,Pattern Packer 3,PatternPacker,0,0,1,1,0,1.0,,36,OK
+145,145,Inside Merge 2,,,,,,,SATO,,0,Sato 1 - Inside Lane,,0,1,1,0,0,1.0,,,
+146,146,Outside Merge 1,,,,,,,SATO,,0,Outside ID SATO,,0,0,1,1,0,1.0,,,
 147,147,MergeGBFtoC,,,,,,,,,0,,TrafficCop,0,0,1,1,0,1.0,,,
 148,148,Unused - Sato Cutie Delay,,,,,,,,,0,Sato Cutie Delay,,0,1,1,1,0,1.0,,,
-149,149,Outside Merge 2,,,,,,,SATO,,0,Outside Brown Label,,0,1,0,1,0,1000.0,,,
-150,150,Accumulator 11,,,,,,,,lower.19,0,Accumulator 11 - Bagger 6 CMSA 5,Accumulator,0,0,1,1,0,1.0,,200,OK
-151,151,Accumulator 12,,,,,,,,lower.23,0,Accumulator 12 - Bagger 6 CMSA 5,Accumulator,0,0,1,1,0,1.0,,95,OK
+149,149,Outside Merge 2,,,,,,,SATO,,0,Outside Brown Label,,0,1,1,1,0,1000.0,,,
+150,150,Accumulator 11,,,,,,,,lower.19,0,Accumulator 11 - Bagger 6 CMSA 5,Accumulator,0,0,1,1,0,1.0,,28,Unassigned
+151,151,Accumulator 12,,,,,,,,lower.23,0,Accumulator 12 - Bagger 6 CMSA 5,Accumulator,0,0,1,1,0,1.0,,21a,OK
 152,152,Printer Outside Null,,,,,,,NULLPrinter,,0,,,0,0,1,1,0,100.0,,,
 153,153,Printer Inside Null,,,,,,,NULLPrinter,,0,,,0,1,1,1,0,1.0,,,
 154,154,P1 - Citizen 1,,,,,,,Citizen,Tagging,0,P1 - Citizen 1,,0,0,1,1,0,1.0,,,
@@ -167,17 +167,17 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 166,166,"Pack Table North 7 - Outlets 25,26",,,,,,,,,1,"PackTable1 Outlets25,26",PackTable,0,0,1,1,0,1.0,,,
 167,167,"Pack Table North 8 - Outlets 27,28",,,,,,,,,1,"PackTable1 Outlets27,28",PackTable,0,0,1,1,0,1.0,,,
 168,168,"Pack Table North 9 - Outlets 31,32",,,,,,,,,1,"PackTable1 Outlets31,32",PackTable,0,0,1,1,0,1.0,,,
-169,169,Lower Line 1,,160.0,"Pack Table North 1 - Outlets 1,2",,1.0,1.0,PackTable,lower.0,0,Line 1,PacktablesNorth,0,0,1,1,0,1.0,LHS,30/35,Disabled
-170,170,Lower Line 24,,191.0,"Pack Table South 6 - Outlets 23,24",,1.0,1.0,PackTable,lower.23,0,Line 24,PacktablesSouth,0,0,1,1,0,1.0,RHS,95,OK
-171,171,Lower Line 25,,166.0,"Pack Table North 7 - Outlets 25,26",,1.0,1.0,PackTable,lower.24,0,Line 25,PacktablesNorth,0,0,1,1,0,1.0,LHS,9,Disabled
-172,172,Lower Line 26,,166.0,"Pack Table North 7 - Outlets 25,26",,1.0,1.0,PackTable,lower.25,0,Line 26,PacktablesNorth,0,0,1,1,0,1.0,RHS,9,Disabled
-173,173,Lower Line 27,,167.0,"Pack Table North 8 - Outlets 27,28",,1.0,1.0,PackTable,lower.26,0,Line 27,PacktablesNorth,0,0,1,1,0,1.0,LHS,6,Disabled
-174,174,Lower Line 28,,167.0,"Pack Table North 8 - Outlets 27,28",,1.0,1.0,PackTable,lower.27,0,Line 28,PacktablesNorth,0,0,1,1,0,1.0,RHS,5,Disabled
+169,169,Lower Line 1,,160.0,"Pack Table North 1 - Outlets 1,2",,1.0,1.0,PackTable,lower.0,0,Line 1,PacktablesNorth,0,0,1,1,0,1.0,LHS,1,Disabled
+170,170,Lower Line 24,,191.0,"Pack Table South 6 - Outlets 23,24",,1.0,1.0,PackTable,lower.23,0,Line 24,PacktablesSouth,0,0,1,1,0,1.0,RHS,21a,OK
+171,171,Lower Line 25,,166.0,"Pack Table North 7 - Outlets 25,26",,1.0,1.0,PackTable,lower.24,0,Line 25,PacktablesNorth,0,0,1,1,0,1.0,LHS,40,Unassigned
+172,172,Lower Line 26,,166.0,"Pack Table North 7 - Outlets 25,26",,1.0,1.0,PackTable,lower.25,0,Line 26,PacktablesNorth,0,0,1,1,0,1.0,RHS,22,Unassigned
+173,173,Lower Line 27,,167.0,"Pack Table North 8 - Outlets 27,28",,1.0,1.0,PackTable,lower.26,0,Line 27,PacktablesNorth,0,0,1,1,0,1.0,LHS,22,Unassigned
+174,174,Lower Line 28,,167.0,"Pack Table North 8 - Outlets 27,28",,1.0,1.0,PackTable,lower.27,0,Line 28,PacktablesNorth,0,0,1,1,0,1.0,RHS,18,Unassigned
 175,175,Lower Line 29,,192.0,"Pack Table South 7 - Outlets 29,30",,1.0,1.0,PackTable,lower.28,0,Line 29,PacktablesSouth,0,0,1,1,0,1.0,LHS,75,OK
-176,176,Lower Line 30,,192.0,"Pack Table South 7 - Outlets 29,30",,1.0,1.0,PackTable,lower.29,0,Line 30,PacktablesSouth,0,0,1,1,0,1.0,RHS,75,OK
-177,177,Lower Line 31,,168.0,"Pack Table North 9 - Outlets 31,32",,1.0,1.0,PackTable,lower.30,0,Line 31,PacktablesNorth,0,0,1,1,0,1.0,LHS,6,Disabled
-178,178,Lower Line 32,,168.0,"Pack Table North 9 - Outlets 31,32",,1.0,1.0,PackTable,lower.31,0,Line 32,PacktablesNorth,0,0,1,1,0,1.0,RHS,4,Disabled
-179,179,Lower Line 33,,,,,,,,lower.32,0,Line 33,,0,0,1,1,0,1.0,,12,Disabled
+176,176,Lower Line 30,,192.0,"Pack Table South 7 - Outlets 29,30",,1.0,1.0,PackTable,lower.29,0,Line 30,PacktablesSouth,0,0,1,1,0,1.0,RHS,18,OK
+177,177,Lower Line 31,,168.0,"Pack Table North 9 - Outlets 31,32",,1.0,1.0,PackTable,lower.30,0,Line 31,PacktablesNorth,0,0,1,1,0,1.0,LHS,15,Disabled
+178,178,Lower Line 32,,168.0,"Pack Table North 9 - Outlets 31,32",,1.0,1.0,PackTable,lower.31,0,Line 32,PacktablesNorth,0,0,1,1,0,1.0,RHS,1,Disabled
+179,179,Lower Line 33,,,,,,,,lower.32,0,Line 33,,0,0,1,1,0,1.0,,18,Unassigned
 180,180,Router South to TL4,,,,,,,Traffic,,1,,,1,0,1,1,0,1.0,,,
 181,181,P4 Cold - Citizen 1,,,,,,,Citizen,Shipping,0,P4 Cold - Citizen 1,,0,0,1,1,0,1.0,,,
 182,182,Router Second North side to Tagging TL4,,,,,,,Traffic,,1,,,1,0,1,1,0,1.0,,,
@@ -194,10 +194,10 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 193,193,Inkjet GBF Long Throw,,,,,,,MPERIA,,0,,,0,1,0,1,0,1.0,,,
 194,194,Palletizing Lower (BUFFERING),,,,,,,Traffic,,1,,,1,0,1,1,0,1.0,,,
 195,195,Pallatizing Storage 1,,,,,,,Buffer,,1,,,0,0,0,0,0,1.0,,,
-196,196,Pallatizing Storage 2,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
-197,197,Pallatizing Storage 3,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
-198,198,Pallatizing Storage 4,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
-199,199,Pallatizing Storage 5,,,,,,,Buffer,,1,,,0,0,1,1,0,1.0,,,
+196,196,Pallatizing Storage 2,,,,,,,Buffer,,1,,,0,0,0,0,0,1.0,,,
+197,197,Pallatizing Storage 3,,,,,,,Buffer,,1,,,0,0,0,0,0,1.0,,,
+198,198,Pallatizing Storage 4,,,,,,,Buffer,,1,,,0,0,0,0,0,1.0,,,
+199,199,Pallatizing Storage 5,,,,,,,Buffer,,1,,,0,0,0,0,0,1.0,,,
 200,200,Palletizing Lower P3000 PLC Bufferlanes,,,,,,,Traffic,,1,,p3000,0,0,1,1,0,1.0,,,
 201,201,Palletizing Staging 1,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
 202,202,Palletizing Staging 2,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
@@ -223,7 +223,7 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 222,222,Upper Palletizing Mainline Merge Traffic Cop,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
 223,223,South P3000 PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
 224,224,PIM Verification 40,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
-225,225,CasePacker6,,,,,,,CasePacker,CasePacker.6,0,Bagger 6,PackageCreate,0,0,1,1,0,1.0,,18,
+225,225,CasePacker6,,,,,,,CasePacker,CasePacker.6,0,Bagger 6,PackageCreate,0,0,1,1,0,1.0,,28,
 226,226,Palletizing PLC Outside P3000,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
 227,227,Palletizing Upper (ROBOTS),,,,,,,,,1,,,0,0,1,1,0,1.0,,,
 228,228,Pallet C / Center - Robot1,,,,,,,RobotPalletizer,,1,Robot1 - Pallet C,Pallet,0,1,1,1,0,1.0,,,
@@ -235,8 +235,8 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 234,234,QA Station 1,,,,,,,,,0,,"qa,scale",0,0,1,1,0,1.0,,,
 235,235,North Side End,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
 236,236,North Side End,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
-237,237,Middle - Merge Print 1,,,,,,,,,0,,,0,0,1,0,0,1.0,,,
-238,238,Middle - Merge Print 2,,,,,,,,,0,,,0,0,1,0,0,1.0,,,
+237,237,Middle - Merge Print 1,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
+238,238,Middle - Merge Print 2,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
 239,239,SouthSide/NorthSide Merge,,,,,,,,,0,,Diverter,0,0,1,1,0,1.0,,,
 241,241,Router QA,,,,,,,,,1,,,0,0,1,1,0,1.0,,,
 242,242,QA Station 1,,,,,,,,,0,,,0,0,1,1,0,1.0,,,
@@ -272,3 +272,8 @@ ID,CheckpointID,LocationName,FarScanCheckpointID,ParentID,ParentLocationName,Par
 272,272,North Packtables Table PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
 273,273,Printer PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
 274,274,South Side Sizer End PLC,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+275,275,Accumulator P3000,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+276,276,Northside/TL4 Merge,,,,,,,,,1,,Merge,0,0,1,1,0,1.0,,,
+277,277,FullPallet P3000,,,,,,,,,1,,p3000,0,0,1,1,0,1.0,,,
+278,278,FullPallet/Cold Storage Delivery,,,,,,,,,1,,pallettraffic,0,0,1,1,0,1.0,,,
+279,279,P1 - Packline,,,,,,,,,1,Packline,,0,0,1,1,0,1.0,,,
